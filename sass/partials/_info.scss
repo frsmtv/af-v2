@@ -1,0 +1,51 @@
+@import "mixins";
+
+#info {
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  article {
+    width: 50%;
+    p {
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+    h4 {
+      color: $mainColor;
+    }
+    }
+  }
+
+  #savoir-faire {
+    article {
+      width: 50%;
+      float: right;
+      height: auto;
+      // float: right;
+      padding: 20px;
+      h2 {
+        position: absolute;
+        left:0;
+        width: 40%;
+      }
+      h3 {
+        padding: 0;
+        margin: 0;
+      }
+      h4 {
+        color: $mainColor;
+      }
+      p {
+        padding: 20px;
+        font-size: 1.1rem;
+        line-height: 1.4;
+        span {
+          width: 100%;
+          float: right;
+          padding: 20px;
+          color: $secondColor;
+          background: #333;
+        }
+        }
+    }
+  }

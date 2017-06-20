@@ -1,0 +1,53 @@
+@import "partials/header";
+@import "partials/info";
+@import "partials/portfolio";
+@import "partials/footer";
+@import "partials/mixins";
+
+// KATANAS EDGE FONT
+@font-face {
+font-family: 'KatanasEdge';
+src: url('../fonts/KatanasEdge/KatanasEdge.eot');
+src: url('../fonts/KatanasEdge/KatanasEdge.woff') format('woff'),
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: $mainFont;
+  color: $mainColor;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    color: $secondColor;
+  }
+}
+
+.parallax {
+    width: 100%;
+    height: 70vh;
+    margin-top: 100px;
+}
+
+main {
+  margin: auto;
+  padding: 0 60px;
+  section {
+    margin-top: 200px;
+    h3 {
+      font-size: 5rem;
+      margin: 0;
+      line-height: 1;
+    }
+    h4 {
+      font-size: 2rem;
+      line-height: normal;
+      color: white;
+    }
+  }
+}

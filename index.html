@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A+F est un studio web lyonnais dédié aux artistes et aux acteurs du secteur culturel.">
+    <meta name="author" content="A+F Studio Web">
+    <title>A+F Studio Web • Lyon, France</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500,900" rel="stylesheet">
+
+    <!-- FAVICON -->
+
+    <!-- STYLES -->
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/overlay.css">
+    <link rel="stylesheet" href="css/bundle-sass.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+      <h1><a href="index.html">a+f</a><br>
+      <!-- <span>Nous donnons de l'elan <br>
+      a vos projets web</span></h1> -->
+      </h1>
+
+      <!--  MAIN NAV  -->
+      <div id="main-nav">
+
+        <!-- HAMBURGER -->
+        <div class="navbar-header">
+
+          <div class="toggle-button" id="toggle">
+            <span class="bar top"></span>
+            <span class="bar middle"></span>
+            <span class="bar bottom"></span>
+          </div>
+
+        </div>
+
+        <!-- THE NAV -->
+        <nav id="overlay" class="overlay">
+
+          <ul>
+
+            <li><a href="index.html">home</a></li>
+            <li><a href="#info">à propos</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+
+          </ul>
+
+        </nav>
+
+      </div>
+      <!-- End: main-nav -->
+
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+      <!-- PARALLAX -->
+
+        <div class="parallax animate" data-animate="fadeIn" data-duration="3.0s" data-delay="0.1s" data-offset="0" data-parallax-bg-image="img/elan.gif" data-parallax-bg-position="center top" data-parallax-bg-size="cover" data-parallax-speed= ".9" data-parallax-direction= "up">
+        </div>
+
+      <section id="info">
+
+        <article>
+
+          <h3  class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">Qui nous sommes</h3>
+
+          <h4  class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">a+f est un studio web dédié aux artistes et acteurs du secteur culturel.
+          Nous sommes deux musiciens professionnels, également passionnés par le web et la communication.</h4>
+
+          <p  class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">
+            Conscients des enjeux de la maîtrise du digital pour le développement d'un projet artistique ou culturel, et évoluant nous-même dans ce milieu, nous nous sommes formés au web design, au développement et à la communication digitale, dans le but de mettre nos savoir-faire à la disposition de ceux avec qui nous parlons le même langage.
+          </p>
+
+        </article>
+
+      </section>
+
+      <!-- SAVOIR-FAIRE -->
+      <section id="savoir-faire">
+
+        <article>
+
+          <h3 class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">Ce que nous faisons</h3>
+
+          <h4 class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">a+f se spécialise dans la conception et la réalisation de sites web sur mesure, adaptés à tous les supports numériques.</h4>
+
+          <p class="animate" data-animate="fadeInRight" data-duration="1.0s" data-delay="0.1s" data-offset="0">
+            <span>webdesign • ui design • développement frontend & backend • backoffice sur mesure • responsive multisupport.</span>
+          </p>
+
+        </article>
+
+        <article>
+
+          <p class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">a+f propose également un service de rédaction de contenus pour le web (biographies, articles, posts réseaux sociaux etc …), ainsi que la conception, la rédaction et la gestion de campagnes d’emailing ayant pour but de promouvoir un projet, un concert etc ...
+          </p>
+
+          <p class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">
+            a+f s'appuie également sur un réseau de professionnels afin de proposer des services complémentaires :
+          </p>
+
+          <p class="animate" data-animate="fadeInRight" data-duration="1.0s" data-delay="0.1s" data-offset="0">
+            <span class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">graphisme (conception identité, logotype, charte graphique) • communication digitale & community management • référencement • rédaction & traduction de contenus.</span>
+          </p>
+
+        </article>
+
+      </section>
+
+
+
+      <!-- PORTFOLIO -->
+      <section id="portfolio">
+
+        <h3 class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">Portfolio</h3>
+
+        <img src="img/fsimitchiev-screen.png" alt="" class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">
+
+      </section>
+
+
+
+    </main>
+
+<!-- SCRIPTS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/parallax-background.min.js"></script>
+<script src="js/scrolla.jquery.min.js"></script>
+<script src="js/overlay.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+    // SCROLLA
+    $('.animate').scrolla();
+    // PARALLAX
+    $('.parallax').parallaxBackground();
+</script>
+
+</body>
+</html>
