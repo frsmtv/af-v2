@@ -15,6 +15,11 @@ header {
     margin-top: 60px;
     margin-bottom: 0;
     line-height: .6;
+    -webkit-transition: all 400ms ease-in;
+-moz-transition: all 400ms ease-in;
+-ms-transition: all 400ms ease-in;
+-o-transition: all 400ms ease-in;
+transition: all 400ms ease-in;
     span {
       margin-top: 100px;
       font-family: $secondFont;
@@ -25,6 +30,9 @@ header {
 -ms-transition: all 400ms ease-in;
 -o-transition: all 400ms ease-in;
 transition: all 400ms ease-in;
+    }
+    a:hover {
+      color: $mainColor!important;
     }
   }
 }

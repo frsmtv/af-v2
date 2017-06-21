@@ -1,6 +1,6 @@
 .toggle-button {
     position: fixed;
-    top: 40px;
+    top: 80px;
     right: 60px;
     padding: 9px 10px;
     margin: 8px 15px 8px 0;
@@ -8,6 +8,11 @@
     width: 35px;
     cursor: pointer;
     z-index: 3;
+    -webkit-transition: all 400ms ease-in;
+-moz-transition: all 400ms ease-in;
+-ms-transition: all 400ms ease-in;
+-o-transition: all 400ms ease-in;
+transition: all 400ms ease-in;
 }
 
 .bar {
@@ -52,7 +57,7 @@
     height: 0;
     visibility: hidden;
     opacity: 0;
-    background: url('../img/menu.gif');
+    background: url('../img/giphy.gif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -89,4 +94,5 @@
 }
 .overlay ul li a:hover {
   color: #3FCE94;
+  font-family: 'KatanasEdge';
 }

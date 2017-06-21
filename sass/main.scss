@@ -2,6 +2,7 @@
 @import "partials/info";
 @import "partials/portfolio";
 @import "partials/footer";
+@import "partials/contact";
 @import "partials/mixins";
 
 // KATANAS EDGE FONT
@@ -30,7 +31,7 @@ a {
 
 .parallax {
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     margin-top: 100px;
 }
 
@@ -38,11 +39,12 @@ main {
   margin: auto;
   padding: 0 60px;
   section {
-    margin-top: 200px;
+    // margin-top: 200px;
     h3 {
       font-size: 5rem;
       margin: 0;
       line-height: 1;
+      padding-top: 80px;
     }
     h4 {
       font-size: 2rem;
