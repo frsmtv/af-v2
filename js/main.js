@@ -9,10 +9,12 @@ $(document).ready(function () {
           if(scroll_start > offset.top) {
             $('h1').css('margin-top', '6px');
             $('.toggle-button').css('top', '10px');
+            $('#intro i').fadeOut();
 
           } else {
             $('h1').css('margin-top', '');
             $('.toggle-button').css('top', '');
+            $('#intro i').fadeIn();
       }
     });
 

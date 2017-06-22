@@ -64,7 +64,7 @@ transition: all 400ms ease-in;
     height: 0;
     visibility: hidden;
     opacity: 0;
-    background: url('../img/giphy.gif');
+    background: url('../img/colors.gif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
