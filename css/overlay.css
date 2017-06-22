@@ -1,7 +1,7 @@
 .toggle-button {
     position: fixed;
     top: 80px;
-    right: 60px;
+    right: 40px;
     padding: 9px 10px;
     margin: 8px 15px 8px 0;
     height: 20px;
@@ -14,6 +14,13 @@
 -o-transition: all 400ms ease-in;
 transition: all 400ms ease-in;
 }
+@media (max-width: 620px) {
+  .toggle-button {
+    right: 0;
+    top: 30px;
+    padding: 0;
+  }
+ }
 
 .bar {
     background-color: #333;
@@ -92,6 +99,21 @@ transition: all 400ms ease-in;
     text-decoration: none;
     font-size: 4rem;
 }
+@media (max-width: 540px) {
+  .overlay ul li a {
+    font-size: 2rem;
+  }
+ }
+ @media (max-width: 768px) {
+   .overlay ul li a {
+     font-size: 3rem;
+   }
+  }
+  @media (max-height: 340px) {
+    .overlay ul li a {
+      font-size: 2rem;
+    }
+   }
 .overlay ul li a:hover {
   color: #3FCE94;
   font-family: 'KatanasEdge';

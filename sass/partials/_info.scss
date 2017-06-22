@@ -6,9 +6,15 @@
   display: flex;
   article {
     width: 50%;
+    @media (max-width: 768px) {
+      width: 100%;
+     }
     p {
       font-size: 1.3rem;
       line-height: 1.4;
+      @media (max-width: 768px) {
+        font-size: 1rem;
+       }
     }
     h4 {
       color: $mainColor;
@@ -21,8 +27,11 @@
       width: 50%;
       float: right;
       height: auto;
-      // float: right;
       padding: 20px;
+      @media (max-width: 768px) {
+        width: 100%;
+        float: none;
+       }
       h2 {
         position: absolute;
         left:0;
@@ -39,12 +48,29 @@
         padding: 20px;
         font-size: 1.3rem;
         line-height: 1.4;
+        @media (max-width: 768px) {
+          font-size: 1rem;
+          padding: 0;
+         }
         span {
           font-size: 1.5rem;
+          @media (max-width: 768px) {
+            font-size: 1rem;
+           }
           float: right;
           padding: 20px;
           color: $secondColor;
           background: #333;
+        }
+        span.green {
+          font-size: 1.5rem;
+          @media (max-width: 768px) {
+            font-size: 1rem;
+           }
+          color: $secondColor;
+          background: none;
+          padding: 0;
+          float: none;
         }
         }
     }

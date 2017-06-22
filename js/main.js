@@ -7,8 +7,8 @@ $(document).ready(function () {
       $(document).scroll(function() {
           scroll_start = $(this).scrollTop();
           if(scroll_start > offset.top) {
-            $('h1').css('margin-top', '0');
-            $('.toggle-button').css('top', '0');
+            $('h1').css('margin-top', '6px');
+            $('.toggle-button').css('top', '10px');
 
           } else {
             $('h1').css('margin-top', '');

@@ -3,4 +3,7 @@
 footer {
   text-align: center;
   padding: 40px;
+  @media (max-width: 768px) {
+    font-size: .6rem;
+   }
 }

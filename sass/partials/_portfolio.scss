@@ -2,10 +2,19 @@
 
 #portfolio {
   clear: both;
+  width: 100%;
   .portfolio-wrapper {
-    img {
-      width: 60%;
-      margin-bottom: 40px;
+    line-height: 6;
+    li{
+      img {
+        width: 60%;
+        @media (max-width: 768px) {
+          width: 80%;
+         }
+      }
+      &:nth-child(even) {
+        text-align: right;
+      }
     }
   }
 }
