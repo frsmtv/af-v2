@@ -28,10 +28,7 @@ header {
 -o-transition: all 400ms ease-in;
 transition: all 400ms ease-in;
     span {
-      margin-top: 100px;
-      font-family: $secondFont;
       color: $secondColor;
-      font-size: 1.6rem;
       -webkit-transition: all 400ms ease-in;
 -moz-transition: all 400ms ease-in;
 -ms-transition: all 400ms ease-in;
@@ -42,4 +39,16 @@ transition: all 400ms ease-in;
       color: $mainColor!important;
     }
   }
+  span.title {
+    color: $mainColor;
+    font-size: 50%;
+    vertical-align: middle;
+    -webkit-transition: all 400ms ease-in;
+-moz-transition: all 400ms ease-in;
+-ms-transition: all 400ms ease-in;
+-o-transition: all 400ms ease-in;
+transition: all 400ms ease-in;
+    span {
+  }
+}
 }

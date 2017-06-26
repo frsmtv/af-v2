@@ -71,7 +71,7 @@ main {
   section {
     // margin-top: 200px;
     h3 {
-      font-size: 5rem;
+      font-size: 3rem;
       margin: 0;
       line-height: 1;
       padding-top: 80px;
@@ -92,7 +92,7 @@ main {
     height: 100vh;
     i {
       color: $mainColor;
-      font-size: 4vw;
+      font-size: 3vw;
       position: absolute;
       z-index: 99999;
       left: 50%;
@@ -101,6 +101,11 @@ main {
     }
     .parallax {
       height: 100vh;
+      position: absolute;
+      z-index: 99999;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); /* Yep! */
     }
   }
 }
