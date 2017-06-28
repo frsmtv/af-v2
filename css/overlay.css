@@ -44,7 +44,7 @@ transition: all 400ms ease-in;
     color: #3FCE94;
 }
 .toggle-active .bar {
-    background-color: #fff;
+    background-color: #333;
 }
 .toggle-active .top {
     -webkit-transform: translateY(6px) translateX(0) rotate(45deg);
@@ -64,7 +64,8 @@ transition: all 400ms ease-in;
     height: 0;
     visibility: hidden;
     opacity: 0;
-    background: url('../img/colors.gif');
+    /*background: url('../img/colors.gif');*/
+    background: rgba(235, 235, 235, 0.9);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -78,7 +79,7 @@ transition: all 400ms ease-in;
 }
 .overlay ul {
     position: absolute;
-    width: 100%;
+    width: 50%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); /* Yep! */
@@ -90,31 +91,29 @@ transition: all 400ms ease-in;
     text-align: center;
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
+@media (max-width: 768px) and (orientation:portrait) {
+  .overlay ul {
+    flex-direction: column;
+    line-height: 4;
+  }
+ }
 .overlay ul li {
     display: block;
 }
-.overlay ul li a {
-    color: #fff;
+.overlay ul li  {
+    color: #333;
     text-decoration: none;
-    font-size: 4rem;
+    font-size: 2vw;
 }
-@media (max-width: 540px) {
-  .overlay ul li a {
-    font-size: 2rem;
+@media (max-width: 768px) {
+  .overlay ul li  {
+    font-size: 1rem;
   }
  }
- @media (max-width: 768px) {
-   .overlay ul li a {
-     font-size: 3rem;
-   }
-  }
-  @media (max-height: 340px) {
-    .overlay ul li a {
-      font-size: 2rem;
-    }
-   }
-.overlay ul li a:hover {
+.overlay ul li:hover {
   color: #3FCE94;
   font-family: 'KatanasEdge';
 }

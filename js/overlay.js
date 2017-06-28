@@ -4,7 +4,7 @@ $('#toggle').click(function() {
 });
 
 // HIDE MENU ON CLICK ON A LINK
-$('#overlay a').click(function(){
+$('#overlay li').click(function(){
   $('#overlay').toggleClass('nav-active');
   $('#toggle').toggleClass('toggle-active');
 });

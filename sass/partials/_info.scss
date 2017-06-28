@@ -1,77 +1,157 @@
 @import "mixins";
 
-#info {
+#info, #savoir-faire {
+  height: 100vh;
+  @media (max-width: 768px) {
+    height: auto;
+   }
+  width: 80%;
+  margin: auto;
+  // background: #6BD6F1;
   position: relative;
-  margin-top: 50px;
+  .info-wrapper {
   display: flex;
+  justify-content: space-around;
+  @media (max-width: 768px) {
+    flex-direction: column;
+   }
+  // margin-top: 50px;
+  // display: flex;
   article {
-    width: 50%;
+    width: 30%;
     @media (max-width: 768px) {
       width: 100%;
      }
+    // position: absolute;
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50%, -50%); /* Yep! */
+    // @media (max-width: 768px) {
+    //   width: 100%;
+    //   float: none;
+    //   position: relative;
+    //  }
     p {
-      font-size: 1.3rem;
+      // width: 50%;
+      font-size: 1.2vw;
       line-height: 1.4;
       @media (max-width: 768px) {
         font-size: 1rem;
+        float: none;
+        width: 100%;
        }
+       span {
+               font-size: 1.4vw;
+               color: $secondColor;
+               @media (max-width: 768px) {
+                 font-size: 1rem;
+                }
     }
+    span.green {
+            font-size: 1.4vw;
+            @media (max-width: 768px) {
+              font-size: 1rem;
+             }
+            color: $secondColor;
+            background: none;
+            padding: 0;
+            float: none;
+          }
+          }
     h4 {
       color: $mainColor;
+      // width: 50%;
+      @media (max-width: 768px) {
+        width: 100%;
+       }
+    }
+    &:last-child {
+      margin-top: 25vh;
+      @media (max-width: 768px) {
+        margin-top: 0;
+       }
     }
     }
+  }
+  }
+
+  #info {
+    display: none;
   }
 
   #savoir-faire {
-    article {
-      width: 50%;
-      float: right;
-      height: auto;
-      padding: 20px;
-      @media (max-width: 768px) {
-        width: 100%;
-        float: none;
-       }
-      h2 {
-        position: absolute;
-        left:0;
-        width: 40%;
-      }
-      h3 {
-        padding: 0;
-        margin: 0;
-      }
-      h4 {
-        color: $mainColor;
-      }
-      p {
-        padding: 20px;
-        font-size: 1.3rem;
-        line-height: 1.4;
-        @media (max-width: 768px) {
-          font-size: 1rem;
-          padding: 0;
-         }
-        span {
-          font-size: 1.5rem;
-          @media (max-width: 768px) {
-            font-size: 1rem;
-           }
-          float: right;
-          padding: 20px;
-          color: $secondColor;
-          background: #333;
-        }
-        span.green {
-          font-size: 1.5rem;
-          @media (max-width: 768px) {
-            font-size: 1rem;
-           }
-          color: $secondColor;
-          background: none;
-          padding: 0;
-          float: none;
-        }
-        }
-    }
+    display: none;
   }
+
+  // #savoir-faire {
+  //   height: 100vh;
+  //   // background: #6BD6F1;
+  //   position: relative;
+  //   display: flex;
+  //   justify-content: space-around;
+  //   article {
+  //     // position: absolute;
+  //     // left: 50%;
+  //     // top: 50%;
+  //     // transform: translate(-50%, -50%); /* Yep! */
+  //     @media (max-width: 768px) {
+  //       width: 100%;
+  //       float: none;
+  //       position: relative;
+  //      }
+  //     h2 {
+  //       @media (max-width: 768px) {
+  //         width: 100%;
+  //        }
+  //       // position: absolute;
+  //       // left:0;
+  //       // width: 50%;
+  //     }
+  //     h3 {
+  //       // padding: 0;
+  //       // margin: 0;
+  //     }
+  //     h4 {
+  //       width: 50%;
+  //       color: $mainColor;
+  //       @media (max-width: 768px) {
+  //         width: 100%;
+  //        }
+  //     }
+  //     p {
+  //       width: 50%;
+  //       float: right;
+  //       font-size: 1rem;
+  //       line-height: 1.4;
+  //       @media (max-width: 768px) {
+  //         font-size: 1rem;
+  //         padding: 0;
+  //         float: none;
+  //         width: 100%;
+  //        }
+  //       span {
+  //         font-size: 1.1rem;
+  //         @media (max-width: 768px) {
+  //           font-size: 1rem;
+  //          }
+  //         float: right;
+  //         padding: 20px;
+  //         color: $secondColor;
+  //         background: #333;
+  //         @media (max-width: 768px) {
+  //           float: none;
+  //          }
+  //       }
+  //       span.green {
+  //         font-size: 1.1rem;
+  //         @media (max-width: 768px) {
+  //           font-size: 1rem;
+  //          }
+  //         color: $secondColor;
+  //         background: none;
+  //         padding: 0;
+  //         float: none;
+  //       }
+  //       }
+  //   }
+  // }

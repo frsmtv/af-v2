@@ -1,99 +1,46 @@
 @import "mixins";
 
 #portfolio {
-  clear: both;
-  width: 100%;
-  .portfolio-wrapper {
-    li{
-      margin-bottom: 80px;
-      position: relative;
-      width: 50%;
-      img {
-        width: 60%;
-        // -webkit-box-shadow: 10px 10px 10px 10px #D9D9D9;
-        // box-shadow: 10px 10px 10px 10px #D9D9D9;
+  display: none;
+  width: 80%;
+  margin: auto;
+  // height: 100vh;
+  position: relative;
+  div.row {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-direction: column;
+     }
+    article {
+      width: 30%;
+      @media (max-width: 768px) {
+        width: 100%;
+       }
+      h5 {
+        font-size: 1.2vw;
         @media (max-width: 768px) {
-          width: 80%;
+          font-size: 1rem;
+         }
+        span {
+          font-weight: normal;
+          display: inline-block;
+          @media (max-width: 768px) {
+            font-size: .8rem;
+           }
+        }
+      }
+      img {
+        width: 100%;
+        @media (max-width: 768px) and (orientation:landscape) {
+          width: 70%;
          }
       }
-      h2 {
-        font-size: 2rem;
-        position: absolute;
-        top: 20%;
-        left: 100%;
-        width: 100%;
-        font-family: $secondFont;
-        padding: 0;
-        margin: 0;
-        line-height: 1.4;
-        z-index: 999;
-        @media all and (max-width: 768px) {
-          font-size: 1rem;
-          right: -100%;
-          margin-top: -20px;
-         }
-         @media all and (max-width: 768px) and (orientation:landscape) {
-           font-size: 1rem;
-           position: relative;
-           margin-top: -50vh;
-           margin-left: 40px;
-          }
-        span {
-          width: 100%;
-          font-weight: 300;
-          // visibility: hidden;
-          font-size: 70%;
-          display: inline-block;
-          }
-          span.project-info {
-            font-family: $mainFont;
-            font-size: 50%;
-            @media all and (max-width: 768px) {
-              font-size: 70%;
-             }
-          }
-        }
-        .parallax {
-          // width: 60vw;
-          height: 80vh;
-          @media all and (max-width: 768px) {
-            width: 90vw;
-           }
-           @media all and (max-width: 768px) and (orientation:landscape) {
-             width: 50vw;
-            }
-        }
       &:nth-child(even) {
-        // text-align: right;
-        img {
-          // -webkit-box-shadow: -10px 10px 10px 10px #D9D9D9;
-          // box-shadow: -10px 10px 10px 10px #D9D9D9;
-        }
-        h2 {
-          left: 50%;
-          @media all and (max-width: 768px) {
-            right: 0;
-            left: 100%;
-            margin-top: -20px;
-           }
-          @media all and (max-width: 768px) and (orientation:landscape) {
-            right: 0;
-            left: 100%;
-            margin-top: -50vh;
-           }
-          // left: 50%;
-          // right: 100%;
-          // @media all and (max-width: 768px) {
-          //   right: -100%;
-          //  }
-        }
-        .parallax {
-          margin-left: 100%;
-          height: 80vh;
-          @media all and (max-width: 768px) {
-            margin-left: 0;
-           }
-        }
+        padding-top: 20vh;
+        @media (max-width: 768px) {
+          padding-top: 0;
+         }
       }
     }
   }

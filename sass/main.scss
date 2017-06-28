@@ -19,6 +19,7 @@ html, body {
   font-size: 16px;
   font-family: $mainFont;
   color: $mainColor;
+  background: #EBEBEB;
 }
 
 ul {
@@ -36,26 +37,10 @@ a {
 
 .parallax {
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     // margin-top: 100px;
     position: relative;
-    h2 {
-      color: white;
-      opacity: .9;
-      width: 100%;
-      text-align: center;
-      line-height: 2;
-      font-family: $secondFont;
-      font-size: 3.5vw;
-      position: absolute;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%); /* Yep! */
-      span {
-        font-size: 70%;
-      }
-    }
+
     @media all and (max-width: 480px) {
       height: 30vh;
      }
@@ -63,24 +48,28 @@ a {
 
 main {
   margin: auto;
-  padding: 0 60px;
+  // padding: 0 60px;
   @media all and (max-width: 768px) {
-    padding: 0 30px;
+    // padding: 0 30px;
    }
 
   section {
+    padding: 0 60px;
+    padding-top: 20vh;
+    @media (max-width: 768px) {
+      padding: 20vh 0 0 0;
+     }
     // margin-top: 200px;
     h3 {
-      font-size: 3rem;
+      font-size: 2.5vw;
       margin: 0;
       line-height: 1;
-      padding-top: 80px;
       @media (max-width: 768px) {
         font-size: 2.5rem;
        }
     }
     h4 {
-      font-size: 2rem;
+      font-size: 1.4vw;
       line-height: normal;
       color: white;
       @media (max-width: 768px) {
@@ -89,7 +78,6 @@ main {
     }
   }
   #intro {
-    height: 100vh;
     i {
       color: $mainColor;
       font-size: 3vw;
@@ -99,13 +87,21 @@ main {
       top: 95%;
       transform: translate(-50%, -50%); /* Yep! */
     }
-    .parallax {
-      height: 100vh;
+    img {
+      width: 100%;
       position: absolute;
       z-index: 99999;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%); /* Yep! */
+    }
+    .parallax {
+      height: 870px;
+      // position: absolute;
+      // z-index: 99999;
+      // left: 50%;
+      // top: 50%;
+      // transform: translate(-50%, -50%); /* Yep! */
     }
   }
 }

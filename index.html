@@ -48,10 +48,11 @@
 
           <ul>
 
-            <li><a href="index.html">home</a></li>
-            <li><a href="#info">info</a></li>
-            <li><a href="#portfolio">portfolio</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li id="home-btn">home</li>
+            <li id="qui-btn">qui</li>
+            <li id="quoi-btn">quoi</li>
+            <li id="portfolio-btn">portfolio</li>
+            <li id="contact-btn">contact</li>
 
           </ul>
 
@@ -65,165 +66,183 @@
     <!-- MAIN -->
     <main>
 
-        <section id="intro">
+        <section id="intro" class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">
 
-        <!-- PARALLAX -->
-        <div class="parallax animate" data-animate="fadeIn" data-duration="3.0s" data-delay="0.1s" data-offset="0" data-parallax-bg-image="img/colors.gif" data-parallax-bg-position="center center" data-parallax-bg-size="cover" data-parallax-speed= ".9" data-parallax-direction= "up">
-
-        <!-- <h2>Nous portons vos couleurs sur le web</h2> -->
+        <img src="img/colors.png" alt="">
 
         </div>
 
-        <i class="fa fa-caret-down faa-float faa-fast animated" aria-hidden="true"></i>
+        <!-- <i class="fa fa-caret-down faa-float faa-fast animated" aria-hidden="true"></i> -->
 
         </section>
 
     <!-- INFO -->
       <section id="info">
 
-        <article>
+          <div class="info-wrapper">
 
-          <h3 class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">Qui nous sommes</h3>
+            <article class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">
 
-          <h4  class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">a+f est un studio web dédié aux artistes et acteurs du secteur culturel.
-          Nous sommes deux musiciens professionnels, également passionnés par le web et la communication.</h4>
+              <h3>Qui nous sommes</h3>
 
-          <p  class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">
-            Parce qu'à l'ère du digital la communication online est un élément déterminant dans la réussite d'un projet, nous ne nous contentons pas de créer des sites web pour nos clients. Nous les accompagnons dans le développement de leur présence en ligne, en leur proposant un service complet et adapté. Evoluant nous-mêmes dans les milieux des arts et de la culture, nous ne pourrions être mieux placés pour comprendre les réels besoins de nos clients.
-          </p>
+              <h4>a+f est un studio web dédié aux artistes et acteurs du secteur culturel.
+              Nous sommes deux musiciens professionnels, également passionnés par le web et la communication.</h4>
 
-        </article>
+            </article>
+
+            <article class="">
+
+                <p class="animate" data-animate="fadeIn" data-duration="2.4s" data-delay="0.1s" data-offset="0">
+                  Parce qu'à l'ère du digital la communication online est un élément déterminant dans la réussite d'un projet, nous ne nous contentons pas de créer des sites web pour nos clients. Nous les accompagnons dans le développement de leur présence en ligne, en leur proposant un service complet et adapté. Evoluant nous-mêmes dans les milieux des arts et de la culture, nous ne pourrions être mieux placés pour comprendre les réels besoins de nos clients.
+                </p>
+
+            </article>
+
+        </div>
 
       </section>
-
-      <!-- PARALLAX -->
-      <div class="parallax animate" data-animate="fadeIn" data-duration="3.0s" data-delay="0.1s" data-offset="0" data-parallax-bg-image="img/workspace.jpg" data-parallax-bg-position="center center" data-parallax-bg-size="contain" data-parallax-speed= ".9" data-parallax-direction= "up">
-      </div>
 
       <!-- SAVOIR-FAIRE -->
       <section id="savoir-faire">
 
-        <article>
+          <div class="info-wrapper">
 
-          <h3 class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">Ce que nous faisons</h3>
+            <article>
 
-          <h4 class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">a+f se spécialise dans la conception et la réalisation de sites web sur mesure, adaptés à tous les supports numériques.</h4>
+              <h3 class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">Ce que nous faisons</h3>
 
-          <p class="animate" data-animate="fadeInRight" data-duration="1.0s" data-delay="0.1s" data-offset="0">
-            <span>webdesign • ui design • développement frontend & backend • backoffice sur mesure • responsive multi-support.</span>
-          </p>
+              <h4 class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">a+f se spécialise dans la conception et la réalisation de sites web sur mesure, adaptés à tous les supports numériques.</h4>
 
-        </article>
+              <p class="animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s" data-offset="0">
+                <span>webdesign • ui design • développement frontend & backend • backoffice sur mesure • responsive multi-support.</span>
+              </p>
 
-        <article>
+            </article>
 
-          <p class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="0">En veille permanente et à l'affût des dernières tendances, nous allions le design aux dernières technologies afin de réaliser des expériences élégantes et fonctionnelles, avec pour maîtres mots : simplicité, éloquence et soucis du détail.<br>
-          Notre objectif est d'aider nos clients à se différencier par la création d'un site web original et professionnel.
-          </p>
+            <article class="">
 
-          <p class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="0">
-            a+f s'appuie également sur un réseau de professionnels afin de proposer des services complémentaires :
-            <br><br>
-            <span class="green">graphisme</span> (conception identité visuelle, logo, flyers et dépliants, dossier de presse, pochette CD/DVD) • <span class="green">conseil en communication digitale & community management</span> • <span class="green">référencement</span> • <span class="green">rédaction & traduction de contenus</span> (biographies, dossiers de presse, campagnes d'emailing etc ...) • <span class="green">photo</span> • <span class="green">vidéo</span> • <span class="green">musique / sound design</span>.
-          </p>
+                <p class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="0">En veille permanente et à l'affût des dernières tendances, nous allions le design aux dernières technologies afin de réaliser des expériences élégantes et fonctionnelles, avec pour maîtres mots : simplicité, éloquence et soucis du détail.<br>
+                Notre objectif est d'aider nos clients à se différencier par la création d'un site web original et professionnel.
+                </p>
 
-        </article>
+                <p class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="0">
+                  a+f s'appuie également sur un réseau de professionnels afin de proposer des services complémentaires :
+                  <br><br>
+                  <span class="green">graphisme</span> (conception identité visuelle, logo, flyers et dépliants, dossier de presse, pochette CD/DVD) • <span class="green">conseil en communication digitale & community management</span> • <span class="green">référencement</span> • <span class="green">rédaction & traduction de contenus</span> (biographies, dossiers de presse, campagnes d'emailing etc ...) • <span class="green">photo</span> • <span class="green">vidéo</span> • <span class="green">musique / sound design</span>.
+                </p>
+
+            </article>
+
+        </div>
 
       </section>
 
       <!-- PORTFOLIO -->
       <section id="portfolio">
 
-        <h3 class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">Portfolio</h3>
+        <!-- <h3 class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">Projets</h3> -->
 
-        <ul class="portfolio-wrapper">
+        <!-- NEW ROW -->
+        <div class="row">
 
-          <!-- NEW ITEM -->
-          <li class="animate" data-animate="fadeIn" data-duration="3.0s" data-delay="0.1s" data-offset="0">
+            <!-- NEW ITEM -->
+            <article class="animate" data-animate="fadeIn" data-duration=".5s" data-delay="0.1s" data-offset="0">
 
-                <!-- PARALLAX -->
-                <div class="parallax" data-parallax-bg-image="img/mock1.png" data-parallax-bg-position="center center" data-parallax-bg-size="contain" data-parallax-speed= ".5" data-parallax-direction= "up">
-                </div>
+                <h5>
+                   Wonder Collective
+                   <span>
+                     musicien (Lyon)
+                   </span>
 
-	          <!-- <img src="img/mock1.png" alt="mockup Wonder Collective"> -->
-  					<h2>
-  						Wonder Collective
-  						<span>
-  							musicien (Lyon)
-  						</span>
+                     <span class="project-info">
+                     <i class="fa fa-info-circle" aria-hidden="true"></i> projet en cours de développement.<br>
+                     <b>Skills : </b>conception / développement site web • design responsive.
+                     </span>
+                 </h5>
 
-                        <span class="project-info">
-                        <i class="fa fa-info-circle" aria-hidden="true"></i> projet en cours de développement
-                        </span>
-  					</h2>
+                 <img src="img/mock1.png" alt="">
+
+            </article>
+
+            <!-- NEW ITEM -->
+            <article class="animate" data-animate="fadeIn" data-duration=".7s" data-delay="0.1s" data-offset="0">
+
+                <h5>
+                   Princess
+                   <span>
+                     musicien (Lyon)
+                   </span>
+
+                    <span class="project-info">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i> projet en cours de développement.<br>
+                    <b>Skills : </b>conception / développement site web • design responsive • conception identité visuelle • conception / réalisation dossier de presse • élaboration plan com' • design / rédaction campagne emailing.
+                    </span>
+                 </h5>
+
+                 <img src="img/mock2.png" alt="">
+
+            </article>
+
+        </div>
+        <!-- End: row -->
+
+        <!-- NEW ROW -->
+        <div class="row">
+
+            <!-- NEW ITEM -->
+            <article class="animate" data-animate="fadeIn" data-duration=".5s" data-delay="0.1s" data-offset="0">
+
+                <h5>
+                   François Simitchiev
+                   <span>
+                     musicien (Lyon)
+                   </span>
+
+                    <span class="project-info">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i> projet en cours de développement.<br>
+                    <b>Skills : </b>conception / développement site web • design responsive •
+                    conception identité visuelle • conception / réalisation dossier de presse •
+                    élaboration plan com' et design / rédaction campagne emailing.
+                    </span>
+                 </h5>
+
+                 <img src="img/mock3.png" alt="">
+
+            </article>
+
+            <!-- NEW ITEM -->
+            <article class="animate" data-animate="fadeIn" data-duration=".7s" data-delay="0.1s" data-offset="0">
+
+                <h5>
+                   Iray
+                   <span>
+                     musicien (Lyon)
+                   </span>
+
+                    <span class="project-info">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i> projet en cours de développement.<br>
+                    <b>Skills : </b>conception / développement site web • design responsive • <br>
+                    réalisation pochette album / identité visuelle •
+                    conception / réalisation dossier de presse •
+                    design / rédaction campagne emailing.
+                    </span>
+                 </h5>
+
+                 <img src="img/mock4.png" alt="">
+
+            </article>
+
+        </div>
+        <!-- End: row -->
 
 
-
-          </li>
-
-          <!-- NEW ITEM -->
-          <li class="animate" data-animate="fadeIn" data-duration="3.0s" data-delay="0.1s" data-offset="0">
-
-                <!-- PARALLAX -->
-                <div class="parallax" data-parallax-bg-image="img/mock2.png" data-parallax-bg-position="center center" data-parallax-bg-size="contain" data-parallax-speed= ".5" data-parallax-direction= "up">
-                </div>
-  					<h2>
-  						Princess
-  						<span>
-  							musicien (Lyon)
-  						</span>
-
-                        <span class="project-info">
-                        <i class="fa fa-info-circle" aria-hidden="true"></i> projet en cours de développement
-                        </span>
-  					</h2>
-
-          </li>
-
-          <!-- NEW ITEM -->
-          <li class="animate" data-animate="fadeIn" data-duration="3.0s" data-delay="0.1s" data-offset="0">
-
-                <!-- PARALLAX -->
-                <div class="parallax" data-parallax-bg-image="img/mock3.png" data-parallax-bg-position="center center" data-parallax-bg-size="contain" data-parallax-speed= ".5" data-parallax-direction= "up">
-                </div>
-  					<h2>
-  						Francois Simitchiev
-  						<span>
-  							musicien (Lyon)
-  						</span>
-                        <span class="project-info">
-                        <i class="fa fa-info-circle" aria-hidden="true"></i> projet en cours de développement
-                        </span>
-  					</h2>
-
-          </li>
-
-          <!-- NEW ITEM -->
-          <li class="animate" data-animate="fadeIn" data-duration="3.0s" data-delay="0.1s" data-offset="0">
-
-                <!-- PARALLAX -->
-                <div class="parallax" data-parallax-bg-image="img/mock4.png" data-parallax-bg-position="center center" data-parallax-bg-size="contain" data-parallax-speed= ".5" data-parallax-direction= "up">
-                </div>
-  					<h2>
-  						Iray
-  						<span>
-  							musicien (Lyon)
-  						</span>
-                        <span class="project-info">
-                        <i class="fa fa-info-circle" aria-hidden="true"></i> projet en cours de développement
-                        </span>
-  					</h2>
-
-          </li>
-
-        </ul>
 
       </section>
 
       <!-- CONTACT -->
       <section id="contact">
 
-          <h3 class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">Contact</h3>
+          <!-- <h3 class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">Contact</h3> -->
 
           <h4 class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">Nous avons hâte de vous rencontrer.<br>
               Parlez-nous de votre projet !</h4>

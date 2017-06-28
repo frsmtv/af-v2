@@ -7,17 +7,70 @@ $(document).ready(function () {
       $(document).scroll(function() {
           scroll_start = $(this).scrollTop();
           if(scroll_start > offset.top) {
+            // $('h1').css('opacity', '1');
             $('h1').css('margin-top', '6px');
             $('span.title').css('opacity', '0');
             $('.toggle-button').css('top', '10px');
             $('#intro i').fadeOut();
 
           } else {
+            // $('h1').css('opacity', '');
             $('h1').css('margin-top', '');
             $('span.title').css('opacity', '');
             $('.toggle-button').css('top', '');
             $('#intro i').fadeIn();
       }
     });
+
+    // UI ANIMATION
+    $('#home-btn').click(function(){
+      $('h1').css('opacity', '');
+      $('#intro').show();
+      $('#info').hide();
+      $('#savoir-faire').hide();
+      $('#portfolio').hide();
+      $('#contact').hide();
+      $('footer').hide();
+    })
+
+    $('#qui-btn').click(function(){
+      $('h1').css('opacity', '1');
+      $('#intro').hide();
+      $('#info').show();
+      $('#savoir-faire').hide();
+      $('#portfolio').hide();
+      $('#contact').hide();
+      $('footer').hide();
+    })
+
+    $('#quoi-btn').click(function(){
+      $('h1').css('opacity', '1');
+      $('#intro').hide();
+      $('#info').hide();
+      $('#savoir-faire').show();
+      $('#portfolio').hide();
+      $('#contact').hide();
+      $('footer').hide();
+    })
+
+    $('#portfolio-btn').click(function(){
+      $('h1').css('opacity', '1');
+      $('#intro').hide();
+      $('#info').hide();
+      $('#savoir-faire').hide();
+      $('#portfolio').show();
+      $('#contact').hide();
+      $('footer').hide();
+    })
+
+    $('#contact-btn').click(function(){
+      $('h1').css('opacity', '1');
+      $('#intro').hide();
+      $('#info').hide();
+      $('#savoir-faire').hide();
+      $('#portfolio').hide();
+      $('#contact').show();
+      $('footer').show();
+    })
 
 });

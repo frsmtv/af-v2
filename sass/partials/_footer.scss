@@ -1,9 +1,14 @@
 @import "mixins";
 
 footer {
+  display: none;
   text-align: center;
-  padding: 40px;
+  font-size: .7rem;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
   @media (max-width: 768px) {
-    font-size: .6rem;
+
    }
 }
