@@ -116,4 +116,5 @@ transition: all 400ms ease-in;
 .overlay ul li:hover {
   color: #3FCE94;
   font-family: 'KatanasEdge';
+  cursor: pointer;
 }
