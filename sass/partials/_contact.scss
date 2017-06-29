@@ -2,7 +2,12 @@
 
 #contact {
   display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Yep! */
   margin: auto;
+  padding: 0;
   text-align: center;
   // height: 100vh;
   .parallax {
@@ -12,6 +17,7 @@
   h4 {
     color: $mainColor;
     font-size: 3vw;
+    margin: 0;
   }
   ul {
     font-size: 2.5vw;

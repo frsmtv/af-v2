@@ -37,6 +37,9 @@ $(document).ready(function () {
       $('h1').css('opacity', '1');
       $('#intro').hide();
       $('#info').show();
+      $('html, body').animate({
+        scrollTop: $('#info').offset().top - 20
+    }, 'slow');
       $('#savoir-faire').hide();
       $('#portfolio').hide();
       $('#contact').hide();
@@ -48,6 +51,9 @@ $(document).ready(function () {
       $('#intro').hide();
       $('#info').hide();
       $('#savoir-faire').show();
+      $('html, body').animate({
+        scrollTop: $('#savoir-faire').offset().top - 20
+    }, 'slow');
       $('#portfolio').hide();
       $('#contact').hide();
       $('footer').hide();
@@ -59,6 +65,9 @@ $(document).ready(function () {
       $('#info').hide();
       $('#savoir-faire').hide();
       $('#portfolio').show();
+      $('html, body').animate({
+        scrollTop: $('#portfolio').offset().top - 20
+    }, 'slow');
       $('#contact').hide();
       $('footer').hide();
     })
@@ -70,6 +79,9 @@ $(document).ready(function () {
       $('#savoir-faire').hide();
       $('#portfolio').hide();
       $('#contact').show();
+      $('html, body').animate({
+        scrollTop: $('#contact').offset().top - 20
+    }, 'slow');
       $('footer').show();
     })
 
