@@ -19,10 +19,12 @@
        }
       h5 {
         font-size: 1.2vw;
+        color: $secondColor;
         @media (max-width: 768px) {
           font-size: 1rem;
          }
         span {
+          color: $mainColor;
           font-weight: normal;
           display: inline-block;
           @media (max-width: 768px) {

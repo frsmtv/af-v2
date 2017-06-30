@@ -1,15 +1,12 @@
 @import "mixins";
 
-#info, #savoir-faire {
-  height: 100vh;
-  @media (max-width: 768px) {
-    height: auto;
-   }
+#info {
   width: 80%;
   margin: auto;
   // background: #6BD6F1;
   position: relative;
   .info-wrapper {
+    height: 100vh;
   display: flex;
   justify-content: space-around;
   @media (max-width: 768px) {
@@ -21,6 +18,11 @@
     width: 30%;
     @media (max-width: 768px) {
       width: 100%;
+     }
+     h3 {
+       @media (max-width: 740px) {
+         margin-top: 500px;
+        }
      }
     // position: absolute;
     // left: 50%;
@@ -65,12 +67,37 @@
         width: 100%;
        }
     }
+    span.link {
+      font-size: 1vw;
+      margin-right: 40px;
+      -webkit-transition: all 400ms ease-in;
+-moz-transition: all 400ms ease-in;
+-ms-transition: all 400ms ease-in;
+-o-transition: all 400ms ease-in;
+transition: all 400ms ease-in;
+      &:hover {
+        cursor: pointer;
+        border-bottom: 1px solid $mainColor;
+        color: $mainColor!important;
+      }
+      @media (max-width: 768px) {
+        font-size: .8rem;
+       }
+    }
     &:last-child {
-      margin-top: 25vh;
+      margin-top: 35vh;
       @media (max-width: 768px) {
         margin-top: 0;
        }
     }
+    }
+    &:last-child {
+      height: auto;
+      padding-top: 100px;
+      padding-bottom: 40px;
+      @media (max-width: 768px) {
+        padding-top: 200px;
+       }
     }
   }
   }
