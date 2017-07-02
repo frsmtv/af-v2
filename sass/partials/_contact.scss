@@ -15,12 +15,13 @@
     position: absolute;
   }
   h4 {
+    width: 100vw!important;
     color: $mainColor;
-    font-size: 3vw;
+    font-size: 5vw;
     margin: 0;
   }
   ul {
-    font-size: 2.5vw;
+    font-size: 4vw;
     @media (max-width: 768px) {
       font-size: 1rem;
      }

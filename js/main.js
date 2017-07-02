@@ -9,14 +9,14 @@ $(document).ready(function () {
           if(scroll_start > offset.top) {
             // $('h1').css('opacity', '1');
             $('h1').css('margin-top', '6px');
-            $('span.title').css('opacity', '0');
+            // $('span.title').css('opacity', '0');
             $('.toggle-button').css('top', '10px');
             $('i').fadeOut();
 
           } else {
             // $('h1').css('opacity', '');
             $('h1').css('margin-top', '');
-            $('span.title').css('opacity', '');
+            // $('span.title').css('opacity', '');
             $('.toggle-button').css('top', '');
             $('i').fadeIn();
       }
@@ -110,6 +110,14 @@ $(document).ready(function () {
     }, 'slow');
       $('footer').show();
     })
+
+    // PORTFOLIO IMG HOVER ZOOM
+    // $('#portfolio img').mouseover(function(){
+    //   $(this).css('height', '50vh');
+    // })
+    // $('#portfolio img').mouseleave(function(){
+    //   $(this).css('height', '');
+    // })
 
 
 
