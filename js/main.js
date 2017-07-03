@@ -23,12 +23,12 @@ $(document).ready(function () {
     });
 
     // UI ANIMATION
-    $('header h1').mouseover(function(){
-      $('span.title').show();
-    })
-    ('header h1').mouseleave(function(){
-      $('span.title').hide();
-    })
+    // $('header h1').mouseover(function(){
+    //   $('span.title').show();
+    // })
+    // ('header h1').mouseleave(function(){
+    //   $('span.title').hide();
+    // })
 
     $('#portfolio li').mouseover(function(){
       $('#portfolio li').not(this).css('opacity', '.1');
