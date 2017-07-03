@@ -1,0 +1,96 @@
+@import "mixins";
+
+.single-intro {
+  height: 100vh;
+}
+
+
+.single-page {
+  .single-intro {
+    cursor: url('../img/cursor.cur'), pointer;
+  }
+  .single-content {
+    position: relative;
+    padding: 100px 0;
+    margin: 0;
+    text-align: center;
+    height: 100vh;
+    cursor: url('../img/cursor.cur'), pointer;
+    .single-content-wrapper {
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); /* Yep! */
+
+    h2 {
+      font-size: 5vw;
+      letter-spacing: 4px;
+      margin-top: 0;
+      span {
+        font-size: 50%;
+        display: block;
+        font-weight: normal;
+
+      }
+    }
+
+    p {
+      width: 50%;
+      margin: 0 auto;
+      padding: 0;
+      line-height: 2;
+      font-size: 2vw;
+      letter-spacing: 2px;
+      span {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2.2vw;
+        letter-spacing: 4px;
+        &:first-child {
+
+        }
+      }
+    }
+    }
+  }
+  .single-next {
+    width: 80%;
+    margin: auto;
+    padding: 100px 0;
+    text-align: center;
+    background: url('../img/blank.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    -webkit-transition: all 900ms ease-in;
+-moz-transition: all 900ms ease-in;
+-ms-transition: all 900ms ease-in;
+-o-transition: all 900ms ease-in;
+transition: all 900ms ease-in;
+    a {
+      font-size: 3vw;
+      span {
+        font-size: 50%;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+
+// WOCO
+#single-woco .single-intro {
+  background: url('../img/mock1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+// PRINCESS
+#single-princess .single-intro {
+  background: url('../img/mock2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}

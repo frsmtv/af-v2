@@ -30,6 +30,8 @@ $(document).ready(function () {
     //   $('span.title').hide();
     // })
 
+    // PORTFOLIO
+
     $('#portfolio li').mouseover(function(){
       $('#portfolio li').not(this).css('opacity', '.1');
     })
@@ -76,6 +78,34 @@ $(document).ready(function () {
     $('#iray-hover').mouseleave(function(){
         $('.hover-img').css("background-image", "");
         $('.hover-img').css('opacity', '');
+    })
+
+    // IRAY
+    $('#sixring-hover').mouseover(function(){
+        $('.hover-img').css("background-image", "url(../img/mock5.png)");
+        $('.hover-img').css('opacity', '1');
+    })
+    $('#sixring-hover').mouseleave(function(){
+        $('.hover-img').css("background-image", "");
+        $('.hover-img').css('opacity', '');
+    })
+
+    // PORTFOLIO > SINGLE
+
+    // WOCO
+    $('#single-woco .single-next a').mouseover(function(){
+      $('#single-woco .single-next').css("background-image", "url(../img/mock2.png)");
+    })
+    $('#single-woco .single-next a').mouseleave(function(){
+      $('#single-woco .single-next').css("background-image", "");
+    })
+
+    // PRINCESS
+    $('#single-princess .single-next a').mouseover(function(){
+      $('#single-princess .single-next').css("background-image", "url(../img/mock3.png)");
+    })
+    $('#single-princess .single-next a').mouseleave(function(){
+      $('#single-princess .single-next').css("background-image", "");
     })
 
 });

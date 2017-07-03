@@ -49,9 +49,9 @@
 
           <ul>
 
-            <li id="home-btn"><a href="#_intro">home</a></li>
+            <li id="home-btn"><a href="index.html">home</a></li>
             <li id="qui-btn"><a href="info.html">info</a></li>
-            <li id="portfolio-btn"><a href="#_portfolio">portfolio</a></li>
+            <li id="portfolio-btn"><a href="index.html#_portfolio">portfolio</a></li>
             <li id="contact-btn"><a href="contact.html">contact</a></li>
 
           </ul>
@@ -66,91 +66,46 @@
     <!-- MAIN -->
     <main>
 
-        <div id="fullpage">
+        <div id="single-princess" class="single-page animated fadeIn">
 
-            <!-- INTRO -->
-            <section id="intro" class="animate section" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0" data-anchor="_intro">
+          <div class="single-intro"></div>
 
-                <h2>a<span>+</span>f <br>
-                    <span class="title">est un studio web lyonnais dédié aux artistes et aux acteurs du secteur culturel</span></h2>
+          <div class="single-content">
 
-                <!-- <img class="animated fadeIn" src="img/colors.png" alt=""> -->
+              <div class="single-content-wrapper">
+
+                <h2 class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">Princess <span>Projet en cours de développement</span></h2>
+
+                <p class="animate" data-animate="fadeIn" data-duration="3.0s" data-delay="0.5s" data-offset="0">
+                    <span>Skills : </span> Conception & développement site web, Design responsive, Conception identité visuelle, Conception dosssier de presse, Elaboration sratégie de communication, Conception & rédaction campagnes emailing.
+                </p>
+
+            </div>
+            <!-- End: single-content-wrapper -->
+
+          </div>
+          <!-- End: single-content -->
+
+          <div class="single-next animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">
+
+              <a href="fsimitchiev.html">Projet suivant <span>François Simitchiev</span></a>
+
+          </div>
 
 
-            <!-- <i class="fa fa-caret-down faa-float faa-fast animated" aria-hidden="true"></i> -->
-
-            </section>
-
-          <!-- PORTFOLIO -->
-          <section id="portfolio" class="section" data-anchor="_portfolio">
-
-              <!-- HOVER IMG -->
-              <div class="hover-img"></div>
-
-              <ul>
-
-                  <!-- NEW ITEM -->
-                  <li>
-                      <a id="woco-hover" href="woco.html">
-                          Wonder Collective
-                          <span>musicien (Lyon)</span>
-                      </a>
-                  </li>
-
-                  <!-- NEW ITEM -->
-                  <li>
-                      <a id="princess-hover" href="princess.html">
-                          Princess
-                          <span>musicien (Lyon)</span>
-                      </a>
-                  </li>
-
-                  <!-- NEW ITEM -->
-                  <li>
-                      <a id="fsimitchiev-hover" href="fsimitchiev.html">
-                          François Simitchiev
-                          <span>musicien (Lyon)</span>
-                      </a>
-                  </li>
-
-                  <!-- NEW ITEM -->
-                  <li>
-                      <a id="iray-hover" href="iray.html">
-                          Iray
-                          <span>musicien (Lyon)</span>
-                      </a>
-                  </li>
-
-                  <!-- NEW ITEM -->
-                  <li>
-                      <br>
-                      <a id="sixring-hover" href="sixring.html">
-                          Six-Ring Circus
-                          <span>musicien (Lyon)</span>
-                      </a>
-                  </li>
-
-              </ul>
-
-          </section>
 
       </div>
-      <!-- End: fulpage -->
+      <!-- End: single-woco -->
 
     </main>
 
 <!-- SCRIPTS -->
 <script src="js/jquery.min.js"></script>
-<script src="js/jquery.fullpage.min.js"></script>
 <script src="js/scrolla.jquery.min.js"></script>
 <script src="js/overlay.js"></script>
 <script src="js/main.js"></script>
 
 <script>
-    // FULLPAGE
-    $('#fullpage').fullpage({
-		anchors:['_intro', '_portfolio',]
-	});
     // SCROLLA
     $('.animate').scrolla();
 </script>
