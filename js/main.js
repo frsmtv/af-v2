@@ -23,102 +23,59 @@ $(document).ready(function () {
     });
 
     // UI ANIMATION
-    $('#home-btn').click(function(){
-      $('h1').css('opacity', '');
-      $('#intro').show();
-      $('#info').hide();
-      $('#savoir-faire').hide();
-      $('#portfolio').hide();
-      $('#contact').hide();
-      $('footer').hide();
+    $('header h1').mouseover(function(){
+      $('span.title').show();
+    })
+    ('header h1').mouseleave(function(){
+      $('span.title').hide();
     })
 
-    $('#qui-btn').click(function(){
-      $('h1').css('opacity', '1');
-      $('#intro').hide();
-      $('#info').show();
-      $('html, body').animate({
-        scrollTop: $('#info').offset().top - 20
-    }, 'slow');
-      $('#savoir-faire').hide();
-      $('#portfolio').hide();
-      $('#contact').hide();
-      $('footer').hide();
+    $('#portfolio li').mouseover(function(){
+      $('#portfolio li').not(this).css('opacity', '.1');
     })
 
-    $('#quoi-btn').click(function(){
-      $('h1').css('opacity', '1');
-      $('#intro').hide();
-      $('#info').hide();
-      $('#savoir-faire').show();
-      $('html, body').animate({
-        scrollTop: $('#savoir-faire').offset().top - 20
-    }, 'slow');
-      $('#portfolio').hide();
-      $('#contact').hide();
-      $('footer').hide();
+    $('#portfolio li').mouseleave(function(){
+      $('#portfolio li').not(this).css('opacity', '');
     })
 
-    $('#portfolio-btn').click(function(){
-      $('h1').css('opacity', '1');
-      $('#intro').hide();
-      $('#info').hide();
-      $('#savoir-faire').hide();
-      $('#portfolio').show();
-      $('html, body').animate({
-        scrollTop: $('#portfolio').offset().top - 20
-    }, 'slow');
-      $('#contact').hide();
-      $('footer').hide();
+    // WOCO
+    $('#woco-hover').mouseover(function(){
+        $('.hover-img').css("background-image", "url(../img/mock1.png)");
+        $('.hover-img').css('opacity', '1');
+    })
+    $('#woco-hover').mouseleave(function(){
+        $('.hover-img').css("background-image", "");
+        $('.hover-img').css('opacity', '');
     })
 
-    $('#contact-btn').click(function(){
-      $('h1').css('opacity', '1');
-      $('#intro').hide();
-      $('#info').hide();
-      $('#savoir-faire').hide();
-      $('#portfolio').hide();
-      $('#contact').show();
-      $('html, body').animate({
-        scrollTop: $('#contact').offset().top - 20
-    }, 'slow');
-      $('footer').show();
+    // PRINCESS
+    $('#princess-hover').mouseover(function(){
+        $('.hover-img').css("background-image", "url(../img/mock2.png)");
+        $('.hover-img').css('opacity', '1');
+    })
+    $('#princess-hover').mouseleave(function(){
+        $('.hover-img').css("background-image", "");
+        $('.hover-img').css('opacity', '');
     })
 
-    $('#portfolio-link').click(function(){
-      $('h1').css('opacity', '1');
-      $('#intro').hide();
-      $('#info').hide();
-      $('#savoir-faire').hide();
-      $('#portfolio').show();
-      $('html, body').animate({
-        scrollTop: $('#portfolio').offset().top - 20
-    }, 'slow');
-      $('#contact').hide();
-      $('footer').hide();
+    // FSIMITCHIEV
+    $('#fsimitchiev-hover').mouseover(function(){
+        $('.hover-img').css("background-image", "url(../img/mock3.png)");
+        $('.hover-img').css('opacity', '1');
+    })
+    $('#fsimitchiev-hover').mouseleave(function(){
+        $('.hover-img').css("background-image", "");
+        $('.hover-img').css('opacity', '');
     })
 
-    $('#contact-link').click(function(){
-      $('h1').css('opacity', '1');
-      $('#intro').hide();
-      $('#info').hide();
-      $('#savoir-faire').hide();
-      $('#portfolio').hide();
-      $('#contact').show();
-      $('html, body').animate({
-        scrollTop: $('#contact').offset().top - 20
-    }, 'slow');
-      $('footer').show();
+    // IRAY
+    $('#iray-hover').mouseover(function(){
+        $('.hover-img').css("background-image", "url(../img/mock4.png)");
+        $('.hover-img').css('opacity', '1');
     })
-
-    // PORTFOLIO IMG HOVER ZOOM
-    // $('#portfolio img').mouseover(function(){
-    //   $(this).css('height', '50vh');
-    // })
-    // $('#portfolio img').mouseleave(function(){
-    //   $(this).css('height', '');
-    // })
-
-
+    $('#iray-hover').mouseleave(function(){
+        $('.hover-img').css("background-image", "");
+        $('.hover-img').css('opacity', '');
+    })
 
 });

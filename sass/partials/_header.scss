@@ -14,7 +14,7 @@ header {
     padding: 20px 0;
    }
   h1 {
-    opacity: 0;
+    opacity: 1;
     font-size: 4rem;
     margin-top: 60px;
     margin-bottom: 0;
@@ -43,7 +43,8 @@ transition: all 400ms ease-in;
   span.title {
     display: none;
     color: $mainColor;
-    font-size: 50%;
+    font-size:75%;
+    font-family: $secondFont;
     vertical-align: middle;
     -webkit-transition: all 400ms ease-in;
 -moz-transition: all 400ms ease-in;

@@ -49,10 +49,10 @@
 
           <ul>
 
-            <li id="home-btn"><a href="#_intro">home</a></li>
-            <li id="qui-btn"><a href="info.html">info</a></li>
-            <li id="portfolio-btn"><a href="#_portfolio">portfolio</a></li>
-            <li id="contact-btn"><a href="contact.html">contact</a></li>
+              <li id="home-btn"><a href="index.html">home</a></li>
+              <li id="qui-btn"><a href="info.html">info</a></li>
+              <li id="portfolio-btn"><a href="index.html#_portfolio">portfolio</a></li>
+              <li id="contact-btn"><a href="contact.html">contact</a></li>
 
           </ul>
 
@@ -66,69 +66,39 @@
     <!-- MAIN -->
     <main>
 
-        <div id="fullpage">
+        <!-- INFO -->
+          <section id="info" class="section animated fadeIn">
 
-            <!-- INTRO -->
-            <section id="intro" class="animate section" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0" data-anchor="_intro">
+              <p>
+                  est un studio web lyonnais dédié aux artistes et acteurs du secteur culturel. Nous sommes Antoine et François, deux musiciens professionnels, également passionnés par le web et la communication.
+              </p>
 
-                <h2>a<span>+</span>f <br>
-                    <span class="title">est un studio web lyonnais dédié aux artistes et aux acteurs du secteur culturel</span></h2>
+              <p>
+                  a+f se spécialise dans la conception et la réalisation de sites web sur mesure, adaptés à tous les supports numériques. Nous nous efforçons de développer des expériences élégantes et fonctionnelles, avec pour maîtres mots : simplicité, éloquence et soucis du détail.
+              </p>
 
-                <!-- <img class="animated fadeIn" src="img/colors.png" alt=""> -->
+              <p>
+                Parce qu'à l'ère du digital la communication online est un élément déterminant dans la réussite d'un projet, nous ne nous contentons pas de créer des sites web pour nos clients. Nous leur proposons de les accompagner dans le développement de leur présence en ligne, en leur fournissant un service complet et adapté.
+              </p>
 
+              <p>
+                Nous les conseillons et les aidons à mettre en place tous leurs outils de communication digitale. Qu'ils aient besoin d'un graphiste, de photos ou de vidéos pour promouvoir leur identité et leur projet, nous nous appuyons sur notre réseau de professionnels afin de proposer un service complet et sur mesure.
+              </p>
 
-            <!-- <i class="fa fa-caret-down faa-float faa-fast animated" aria-hidden="true"></i> -->
+              <p>
+                Evoluant nous-mêmes dans les milieux des arts et de la culture, nous ne pourrions être mieux placés pour comprendre les réels besoins de nos clients.
+Pour nous, chaque nouveau projet est le point de départ d'une nouvelle collaboration, et nous souhaitons développer avec nos clients une relation de confiance, en étant des interlocuteurs privilégiés, conscients des enjeux et problématiques liés à la maîtrise du digital, et surtout capables de les comprendre.
+              </p>
 
-            </section>
-
-          <!-- PORTFOLIO -->
-          <section id="portfolio" class="section" data-anchor="_portfolio">
-
-              <!-- HOVER IMG -->
-              <div class="hover-img"></div>
-
-              <ul>
-
-                  <!-- NEW ITEM -->
-                  <li>
-                      <a id="woco-hover" href="#">
-                          Wonder Collective
-                          <span>musicien (Lyon)</span>
-                      </a>
-                  </li>
-
-                  <!-- NEW ITEM -->
-                  <li>
-                      <a id="princess-hover" href="#">
-                          Princess
-                          <span>musicien (Lyon)</span>
-                      </a>
-                  </li>
-
-                  <!-- NEW ITEM -->
-                  <li>
-                      <a id="fsimitchiev-hover" href="#">
-                          François Simitchiev
-                          <span>musicien (Lyon)</span>
-                      </a>
-                  </li>
-
-                  <!-- NEW ITEM -->
-                  <li>
-                      <a id="iray-hover" href="#">
-                          Iray
-                          <span>musicien (Lyon)</span>
-                      </a>
-                  </li>
+              <p>
+                  Si vous souhaitez nous parler de votre projet ou même nous rencontrer, envoyez-nous un <a href="mailto:hello@a-f.studio">email</a> !
+              </p>
 
 
-              </ul>
+
+
 
           </section>
-
-
-      </div>
-      <!-- End: fulpage -->
 
     </main>
 
@@ -141,9 +111,7 @@
 
 <script>
     // FULLPAGE
-    $('#fullpage').fullpage({
-		anchors:['_intro', '_portfolio',]
-	});
+    $('#fullpage').fullpage();
     // SCROLLA
     $('.animate').scrolla();
 </script>
