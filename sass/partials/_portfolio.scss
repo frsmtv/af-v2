@@ -13,8 +13,11 @@
     height: auto;
     z-index: 0;
     opacity: 0;
-    -webkit-transition: .5s ease-out;
-    transition: .5s ease-out;
+    -webkit-transition: all 900ms ease-in;
+-moz-transition: all 900ms ease-in;
+-ms-transition: all 900ms ease-in;
+-o-transition: all 900ms ease-in;
+transition: all 900ms ease-in;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;

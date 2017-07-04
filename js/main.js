@@ -12,6 +12,7 @@ $(document).ready(function () {
             // $('span.title').css('opacity', '0');
             $('.toggle-button').css('top', '10px');
             $('i').fadeOut();
+            $('.single-intro').addClass('slide-rotate-hor-t-bck');
 
           } else {
             // $('h1').css('opacity', '');
@@ -19,15 +20,16 @@ $(document).ready(function () {
             // $('span.title').css('opacity', '');
             $('.toggle-button').css('top', '');
             $('i').fadeIn();
+            $('.single-intro').removeClass('slide-rotate-hor-t-bck');
       }
     });
 
     // UI ANIMATION
     // $('header h1').mouseover(function(){
-    //   $('span.title').show();
+    //   $(this).addClass('text-shadow-pop-right');
     // })
     // ('header h1').mouseleave(function(){
-    //   $('span.title').hide();
+    //   $(this).removeClass('text-shadow-pop-right');
     // })
 
     // PORTFOLIO
@@ -42,7 +44,7 @@ $(document).ready(function () {
 
     // WOCO
     $('#woco-hover').mouseover(function(){
-        $('.hover-img').css("background-image", "url(../img/mock1.png)");
+        $('.hover-img').css("background-image", "url(img/mock1.png)");
         $('.hover-img').css('opacity', '1');
     })
     $('#woco-hover').mouseleave(function(){
@@ -52,7 +54,7 @@ $(document).ready(function () {
 
     // PRINCESS
     $('#princess-hover').mouseover(function(){
-        $('.hover-img').css("background-image", "url(../img/mock2.png)");
+        $('.hover-img').css("background-image", "url(img/mock2.png)");
         $('.hover-img').css('opacity', '1');
     })
     $('#princess-hover').mouseleave(function(){
@@ -62,7 +64,7 @@ $(document).ready(function () {
 
     // FSIMITCHIEV
     $('#fsimitchiev-hover').mouseover(function(){
-        $('.hover-img').css("background-image", "url(../img/mock3.png)");
+        $('.hover-img').css("background-image", "url(img/mock3.png)");
         $('.hover-img').css('opacity', '1');
     })
     $('#fsimitchiev-hover').mouseleave(function(){
@@ -72,7 +74,7 @@ $(document).ready(function () {
 
     // IRAY
     $('#iray-hover').mouseover(function(){
-        $('.hover-img').css("background-image", "url(../img/mock4.png)");
+        $('.hover-img').css("background-image", "url(img/mock4.png)");
         $('.hover-img').css('opacity', '1');
     })
     $('#iray-hover').mouseleave(function(){
@@ -82,7 +84,7 @@ $(document).ready(function () {
 
     // IRAY
     $('#sixring-hover').mouseover(function(){
-        $('.hover-img').css("background-image", "url(../img/mock5.png)");
+        $('.hover-img').css("background-image", "url(img/mock5.png)");
         $('.hover-img').css('opacity', '1');
     })
     $('#sixring-hover').mouseleave(function(){
@@ -94,7 +96,7 @@ $(document).ready(function () {
 
     // WOCO
     $('#single-woco .single-next a').mouseover(function(){
-      $('#single-woco .single-next').css("background-image", "url(../img/mock2.png)");
+      $('#single-woco .single-next').css("background-image", "url(img/mock2.png)");
     })
     $('#single-woco .single-next a').mouseleave(function(){
       $('#single-woco .single-next').css("background-image", "");
@@ -102,7 +104,7 @@ $(document).ready(function () {
 
     // PRINCESS
     $('#single-princess .single-next a').mouseover(function(){
-      $('#single-princess .single-next').css("background-image", "url(../img/mock3.png)");
+      $('#single-princess .single-next').css("background-image", "url(img/mock3.png)");
     })
     $('#single-princess .single-next a').mouseleave(function(){
       $('#single-princess .single-next').css("background-image", "");

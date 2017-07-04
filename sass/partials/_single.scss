@@ -8,6 +8,10 @@
 .single-page {
   .single-intro {
     cursor: url('../img/cursor.cur'), pointer;
+    text-align: center;
+    img {
+      width: 70%;
+    }
   }
   .single-content {
     position: relative;
@@ -62,7 +66,7 @@
     background: url('../img/blank.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right center;
+    background-position: center center;
     -webkit-transition: all 900ms ease-in;
 -moz-transition: all 900ms ease-in;
 -ms-transition: all 900ms ease-in;
@@ -77,20 +81,4 @@ transition: all 900ms ease-in;
       }
     }
   }
-}
-
-// WOCO
-#single-woco .single-intro {
-  background: url('../img/mock1.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-// PRINCESS
-#single-princess .single-intro {
-  background: url('../img/mock2.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
