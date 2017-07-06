@@ -32,6 +32,14 @@ $(document).ready(function () {
     //   $(this).removeClass('text-shadow-pop-right');
     // })
 
+
+    // $('header h1').mouseover(function(){
+    //     $('header h1 span').css('color', '#3FCE94');
+    // })
+    // $('header h1').mouseleave(function(){
+    //     $('header h1 span').css('color', '');
+    // })
+
     // PORTFOLIO
 
     $('#portfolio li').mouseover(function(){

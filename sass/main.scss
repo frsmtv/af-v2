@@ -68,12 +68,15 @@ main {
     }
   }
   #intro {
-    cursor: url('../img/cursor.cur'), pointer;
+    background: #333;
+    color: white;
+    cursor: url('../img/cursor-wh.cur'), pointer;
     width: 100vw;
+    max-width: 1200px;
     height: 100vh;
     padding: 0;
     h2 {
-      font-size: 10vw;
+      font-size: 8vw;
       padding: 0;
       margin: 0;
       text-align: left;
@@ -96,7 +99,7 @@ main {
         color: $mainColor!important;
       }
     span.title {
-      color: $mainColor;
+      color: white;
       font-size: 80%;
       // vertical-align: middle;
       -webkit-transition: all 400ms ease-in;
@@ -104,7 +107,9 @@ main {
   -ms-transition: all 400ms ease-in;
   -o-transition: all 400ms ease-in;
   transition: all 400ms ease-in;
-      span {
+      span.underline {
+        color: white;
+        border-bottom: 2px solid white;
     }
   }
     }
@@ -116,6 +121,15 @@ main {
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%); /* Yep! */
+    }
+    div.mask {
+      background: #333;
+      height: 200px;
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0;
+      z-index: 1000;
     }
   }
 }
