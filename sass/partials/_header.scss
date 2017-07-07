@@ -15,7 +15,7 @@ header {
    }
   h1 {
     position: relative;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 60px;
     margin-bottom: 0;
     line-height: .6;
@@ -30,14 +30,20 @@ header {
 transition: all 400ms ease-in;
     span {
       // color: $secondColor;
-      -webkit-transition: all 400ms ease-in;
--moz-transition: all 400ms ease-in;
--ms-transition: all 400ms ease-in;
--o-transition: all 400ms ease-in;
-transition: all 400ms ease-in;
+//       -webkit-transition: all 400ms ease-in;
+// -moz-transition: all 400ms ease-in;
+// -ms-transition: all 400ms ease-in;
+// -o-transition: all 400ms ease-in;
+// transition: all 400ms ease-in;
     }
     a:hover {
-      color: $mainColor!important;
+      -webkit-transition: all 400ms ease-in;
+  -moz-transition: all 400ms ease-in;
+  -ms-transition: all 400ms ease-in;
+  -o-transition: all 400ms ease-in;
+  transition: all 400ms ease-in;
+      color: white!important;
+      text-shadow: $textShadow;
     }
   }
   span.title {

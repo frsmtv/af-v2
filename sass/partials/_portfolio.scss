@@ -1,7 +1,27 @@
 @import "mixins";
 
 #portfolio {
-  padding: 0;
+  padding: 0 5%;
+  h2 {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 5vw;
+    // color: white;
+    // text-shadow: $textShadow;
+  }
+  img:first-child {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+  }
   .hover-img {
     position: absolute;
     top: 0;
@@ -24,6 +44,7 @@ transition: all 900ms ease-in;
     background-image: url(../img/blank.jpg);
   }
   ul {
+    // text-shadow: 0 13.36px 8.896px #c4b59d, 0 -2px 1px #fff;
     text-align: center;
     line-height: 2;
     width: 80%;
@@ -33,6 +54,8 @@ transition: all 900ms ease-in;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); /* Yep! */
+    // color: white;
+    // text-shadow: $textShadow;
     li {
       display: inline;
       @media (max-width: 768px) {
@@ -45,22 +68,31 @@ transition: all 900ms ease-in;
   transition: all 900ms ease-in;
       a {
         font-size: 4vw;
+        -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
         @media (max-width: 768px) {
           font-size: 2rem;
         }
         span {
+          color: $mainColor;
           font-size: 1vw;
           text-transform: uppercase;
           letter-spacing: 2px;
+          // text-shadow: none;
           @media (max-width: 768px) {
             display: none;
           }
         }
         &:hover {
-          color: $mainColor;
+          // color: $mainColor;
           cursor: crosshair;
           span {
             font-family: $mainFont;
+            text-shadow: none;
+            color: $mainColor;
           }
         }
       }

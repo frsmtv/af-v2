@@ -11,7 +11,7 @@
     cursor: url('../img/cursor.cur'), pointer;
     text-align: center;
     img {
-      width: 70%;
+      width: 60%;
     }
   }
   .single-content {
@@ -30,8 +30,12 @@
       font-size: 5vw;
       letter-spacing: 4px;
       margin-top: 0;
+      // text-shadow: $textShadow;
+      color: white;
       span {
-        font-size: 50%;
+        color: $mainColor;
+        // text-shadow: none;
+        font-size: 40%;
         display: block;
         font-weight: normal;
 
@@ -43,12 +47,12 @@
       margin: 0 auto;
       padding: 0;
       line-height: 2;
-      font-size: 2vw;
+      font-size: 1vw;
       letter-spacing: 2px;
+      text-transform: uppercase;
       span {
-        text-transform: uppercase;
         font-weight: bold;
-        font-size: 2.2vw;
+        font-size: 1.2vw;
         letter-spacing: 4px;
         &:first-child {
 
@@ -77,11 +81,14 @@
 -o-transition: all 900ms ease-in;
 transition: all 900ms ease-in;
     a {
-      font-size: 3vw;
+      font-size: 2vw;
       span {
         font-size: 50%;
         text-transform: uppercase;
         letter-spacing: 2px;
+      }
+      &:hover {
+        // text-shadow: 0 -2px 1px #fff;
       }
     }
   }

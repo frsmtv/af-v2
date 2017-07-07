@@ -20,7 +20,6 @@ html, body {
   font-size: 16px;
   font-family: $mainFont;
   color: $mainColor;
-  // background: #EBEBEB;
 }
 
 ul {
@@ -70,6 +69,7 @@ main {
   #intro {
     background: #333;
     color: white;
+    text-shadow: $textShadow;
     cursor: url('../img/cursor-wh.cur'), pointer;
     width: 100vw;
     max-width: 1200px;
@@ -88,7 +88,7 @@ main {
       top: 50%;
       transform: translate(-50%, -50%); /* Yep! */
       span {
-        color: $secondColor;
+        // color: $secondColor;
         -webkit-transition: all 400ms ease-in;
   -moz-transition: all 400ms ease-in;
   -ms-transition: all 400ms ease-in;
@@ -117,12 +117,13 @@ main {
       width: 100%;
       max-width: 1200px;
       position: absolute;
-      z-index: -1;
+      // z-index: -1;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%); /* Yep! */
     }
     div.mask {
+      display: none;
       background: #333;
       height: 200px;
       width: 100%;

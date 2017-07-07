@@ -64,8 +64,8 @@ transition: all 400ms ease-in;
     height: 0;
     visibility: hidden;
     opacity: 0;
-    /*background: url('../img/colors.gif');*/
-    background: rgba(255, 255, 255, 0.9);
+    /*background: rgba(255, 255, 255, 0.9);*/
+    background: white;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -112,9 +112,16 @@ transition: all 400ms ease-in;
     display: block;
 }
 .overlay ul li  {
-    color: #333;
+    color: white;
+    text-shadow: 1px 1px 0 #CCC,
+  	2px 2px 0 #CCC, /* end of 2 level deep grey shadow */
+  	3px 3px 0 #444,
+  	4px 4px 0 #444,
+  	5px 5px 0 #444,
+  	6px 6px 0 #444; /* end of 4 level deep dark shadow */
     text-decoration: none;
     font-size: 3vw;
+    /*text-shadow: 0 13.36px 8.896px #c4b59d, 0 -2px 1px #fff;*/
 }
 @media (max-width: 768px) {
   .overlay ul li  {
@@ -122,7 +129,7 @@ transition: all 400ms ease-in;
   }
  }
 .overlay ul li:hover {
-  color: #333!important;
+  /*color: #333!important;*/
   font-family: 'KatanasEdge';
   cursor: pointer;
 }
