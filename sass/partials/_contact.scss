@@ -19,11 +19,12 @@
   text-align: center;
   // height: 100vh;
   h4 {
-    color: white;
-    text-shadow: $textShadow;
+    // color: white;
+    // text-shadow: $textShadow;
     font-size: 5vw;
     margin: 0;
     margin-bottom: 40px;
+    color: $mainColor;
   }
   ul {
     padding: 0;

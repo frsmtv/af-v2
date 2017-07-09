@@ -20,6 +20,7 @@ html, body {
   font-size: 16px;
   font-family: $mainFont;
   color: $mainColor;
+  background: #EFEFEF;
 }
 
 ul {
@@ -59,27 +60,30 @@ main {
     h4 {
       font-size: 1.4vw;
       line-height: normal;
-      color: white;
       @media (max-width: 768px) {
         font-size: 1rem;
        }
     }
   }
   #intro {
-    background: #333;
-    color: white;
-    text-shadow: $textShadow;
-    cursor: url('../img/cursor-wh.cur'), pointer;
+    // background: #333;
+    // color: white;
+    // text-shadow: $textShadow;
+    background: url('../img/camera.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    cursor: url('../img/cursor.cur'), pointer;
     width: 100vw;
     max-width: 1200px;
     height: 100vh;
     padding: 0;
     h2 {
-      font-size: 8vw;
+      font-size: 4vw;
       padding: 0;
       margin: 0;
       text-align: left;
-      line-height: 8vw;
+      line-height: 4vw;
       width: 90%;
       position: absolute;
       z-index: 99999;
@@ -98,7 +102,6 @@ main {
         color: $mainColor!important;
       }
     span.title {
-      color: white;
       font-size: 80%;
       // vertical-align: middle;
       -webkit-transition: all 400ms ease-in;
