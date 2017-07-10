@@ -18,21 +18,35 @@
     // color: white;
     // text-shadow: $textShadow;
   }
+  .parallax {
+    margin-top: 100px;
+    background: #000000;
+    width: 70%;
+    margin-bottom: 40px;
+    height: 500px;
+    z-index: -999!important;
+  }
   .info-wrapper {
     display: flex;
     justify-content: space-between;
     div {
       width: 30%;
       p {
-        font-size: 1rem;
+        font-size: 1.2vw;
         line-height: 1.5;
         a {
+          color: $secondColor;
           padding-bottom: 4px;
-          border-bottom: 4px solid $mainColor;
+          border-bottom: 4px solid $secondColor;
           &:hover {
             font-family: $secondFont;
           }
         }
+      }
+      p.complementaire {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1vw;
       }
     }
   }

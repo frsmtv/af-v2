@@ -4,6 +4,7 @@
 @import "partials/single";
 @import "partials/footer";
 @import "partials/contact";
+@import "partials/summer";
 @import "partials/mixins";
 
 // KATANAS EDGE FONT
@@ -20,7 +21,6 @@ html, body {
   font-size: 16px;
   font-family: $mainFont;
   color: $mainColor;
-  background: #EFEFEF;
 }
 
 ul {
@@ -34,6 +34,15 @@ a {
   &:hover {
     // color: $secondColor;
   }
+}
+
+hr {
+  width: 30%;
+  background: $mainColor;
+}
+
+.hide {
+  display: none;
 }
 
 main {
@@ -69,10 +78,10 @@ main {
     // background: #333;
     // color: white;
     // text-shadow: $textShadow;
-    background: url('../img/camera.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center bottom;
+    // background: url('../img/camera.png');
+    // background-repeat: no-repeat;
+    // // background-size: contain;
+    // background-position: center bottom;
     cursor: url('../img/cursor.cur'), pointer;
     width: 100vw;
     max-width: 1200px;
@@ -86,7 +95,7 @@ main {
       line-height: 4vw;
       width: 90%;
       position: absolute;
-      z-index: 99999;
+      // z-index: 99999;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%); /* Yep! */
@@ -99,7 +108,7 @@ main {
   transition: all 400ms ease-in;
       }
       a:hover {
-        color: $mainColor!important;
+        // color: $mainColor!important;
       }
     span.title {
       font-size: 80%;
@@ -110,7 +119,8 @@ main {
   -o-transition: all 400ms ease-in;
   transition: all 400ms ease-in;
       span.underline {
-        color: white;
+        color: $secondColor;
+        font-family: $secondFont;
         border-bottom: 2px solid white;
     }
   }
@@ -124,7 +134,7 @@ main {
       top: 50%;
       transform: translate(-50%, -50%); /* Yep! */
     }
-    div.mask {
+    diinv.mask {
       display: none;
       background: #333;
       height: 200px;

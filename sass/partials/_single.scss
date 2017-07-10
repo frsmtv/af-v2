@@ -1,7 +1,7 @@
 @import "mixins";
 
 .single-intro {
-  height: 100vh;
+  // height: 100vh;
 }
 
 
@@ -30,11 +30,14 @@
       font-size: 5vw;
       letter-spacing: 4px;
       margin-top: 0;
-      // text-shadow: $textShadow;
-      // color: white;
-      span {
+      span.scdwrd {
+        font-family: $secondFont;
+        color: $secondColor;
+        margin-left: -20px;
+      }
+      span.sub {
+        font-family: $mainFont;
         color: $mainColor;
-        // text-shadow: none;
         font-size: 40%;
         display: block;
         font-weight: normal;

@@ -11,20 +11,21 @@ $(document).ready(function () {
             $('h1').css('margin-top', '6px');
             // $('span.title').css('opacity', '0');
             $('.toggle-button').css('top', '10px');
-            $('i').fadeOut();
-            $('.single-intro').addClass('slide-rotate-hor-t-bck');
+            $('#contact-link').css('bottom', '20px')
 
           } else {
             // $('h1').css('opacity', '');
             $('h1').css('margin-top', '');
             // $('span.title').css('opacity', '');
             $('.toggle-button').css('top', '');
-            $('i').fadeIn();
-            $('.single-intro').removeClass('slide-rotate-hor-t-bck');
+            $('#contact-link').css('bottom', '')
       }
     });
 
     // UI ANIMATION
+    $('body').addClass('animated fadeIn');
+
+
     // $('header h1').mouseover(function(){
     //   $(this).addClass('text-shadow-pop-right');
     // })
@@ -38,6 +39,13 @@ $(document).ready(function () {
     // })
     // $('header h1').mouseleave(function(){
     //     $('header h1 span').css('color', '');
+    // })
+
+    // $('header h1').mouseover(function(){
+    //   $('header h1 span.sub').show();
+    // })
+    // $('header h1').mouseleave(function(){
+    //   $('header h1 span.sub').hide();
     // })
 
     // PORTFOLIO

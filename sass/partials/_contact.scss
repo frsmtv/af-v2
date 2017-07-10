@@ -3,6 +3,9 @@
 #contact {
   width: 100%;
   padding: 0;
+  background: url('../img/test.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 //   background: #B24592;  /* fallback for old browsers */
 // background: -webkit-linear-gradient(to right, #F15F79, #B24592);  /* Chrome 10-25, Safari 5.1-6 */
 // background: linear-gradient(to right, #F15F79, #B24592); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -19,7 +22,7 @@
   text-align: center;
   // height: 100vh;
   h4 {
-    // color: white;
+    // color: white!important;
     // text-shadow: $textShadow;
     font-size: 5vw;
     margin: 0;
@@ -30,7 +33,9 @@
     padding: 0;
     width: 80%;
     margin: auto;
-    font-size: 4vw;
+    font-size: 3vw;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     // display: flex;
     // justify-content: space-around;
     @media (max-width: 768px) {
@@ -47,6 +52,8 @@
       }
       a:hover {
         font-family: $secondFont;
+        color: $secondColor;
+        text-decoration: overline;
       }
       &:last-child {
         // font-size: 80%;

@@ -1,13 +1,14 @@
 @import "mixins";
 
 footer {
-  // display: none;
+  background: transparent;
   text-align: center;
   font-size: 1vw;
+  padding: 20px;
   position: absolute;
-  left: 0;
-  bottom: 20px;
   width: 100%;
+  left: 0;
+  bottom: 40px;
   @media (max-width: 768px) and (orientation:landscape) {
    }
    @media (max-width: 768px) {
