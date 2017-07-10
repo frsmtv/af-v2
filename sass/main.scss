@@ -120,8 +120,9 @@ main {
   transition: all 400ms ease-in;
       span.underline {
         color: $secondColor;
-        font-family: $secondFont;
-        border-bottom: 2px solid white;
+        &:last-child {
+          font-family: $secondFont;
+        }
     }
   }
     }

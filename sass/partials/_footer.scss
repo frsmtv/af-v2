@@ -6,8 +6,10 @@ footer {
   font-size: 1vw;
   padding: 20px;
   position: absolute;
-  width: 100%;
+  width: 80%;
   left: 0;
+  right: 0;
+  margin: auto;
   bottom: 40px;
   @media (max-width: 768px) and (orientation:landscape) {
    }
