@@ -14,7 +14,7 @@
     <!-- FAVICON -->
 
     <!-- STYLES -->
-    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/fontawesome-animation.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/jquery.fullpage.min.css">
@@ -23,6 +23,10 @@
 </head>
 
 <body>
+
+    <!-- PARALLAX -->
+    <!-- <div class="parallax" data-parallax-bg-image="img/test0.png" data-parallax-bg-position="center center" data-parallax-bg-size="cover" data-parallax-speed= ".5" data-parallax-direction= "down">
+    </div> -->
 
     <!-- HEADER -->
     <header>
@@ -50,9 +54,9 @@
           <ul>
 
             <li id="home-btn"><a href="#_intro">home</a></li>
-            <li id="qui-btn"><a href="#_info">info</a></li>
+            <li id="qui-btn"><a href="#_info">qui nous sommes</a></li>
             <li id="portfolio-btn"><a href="#_portfolio">portfolio</a></li>
-            <li id="contact-btn"><a href="#_contact">contact</a></li>
+            <li id="contact-btn"><a href="#_contact">rencontrons-nous</a></li>
 
           </ul>
 
@@ -62,6 +66,18 @@
       <!-- End: main-nav -->
 
       <a id="contact-link" href="#_contact">contact</a>
+
+      <ul class="contact-head">
+
+          <li><b>Contactez-nous</b><br>
+          <a href="mailto:hello@a-f.studio">hello@a-f.studio</a> <br>
+          <a href="tel:0663351022">+ 33 6 63 35 10 22</a></li>
+
+          <li><b>Suivez-nous</b> <br>
+          <a href="#">facebook</a> <br>
+          <a href="#">twitter</a></li>
+
+      </ul>
 
     </header>
 
@@ -86,8 +102,6 @@
             <h2>Qui nous sommes
             <hr></h2>
 
-            <!-- <img src="img/office.jpg" alt=""> -->
-
             <!-- PARALLAX -->
             <div class="parallax" data-parallax-bg-image="img/office.jpg" data-parallax-bg-position="center bottom" data-parallax-bg-size="contain" data-parallax-speed= ".5" data-parallax-direction= "down">
             </div>
@@ -97,8 +111,12 @@
               <div id="pane1" class="" data-anchor="slide1">
 
                 <p>
-                    Nous sommes Antoine et François, deux musiciens professionnels, également passionnés par le web et la communication.<br>
-                  Parce qu'à l'ère du digital la communication online est un élément déterminant dans la réussite d'un projet, nous proposons à nos clients de les accompagner dans le développement de leur présence en ligne, en leur fournissant un service complet et adapté.
+                    Nous sommes Antoine et François, deux musiciens professionnels.
+                    Pour augmenter la visibilité de nos différents projets artistiques et mieux les défendre, nous avons voulu maîtriser les outils d'Internet.
+                    Au fil du travail et des formations nous avons pris conscience de la complexité de ces outils et de leur nombre.
+                    Forts de ce nouveau savoir-faire et d'une nouvelle passion, nous avons fait le pari de nous mettre au service de nos pairs.
+                    Parce qu'à l'ère du digital, la communication online est un élément déterminant dans la réussite d'un projet.
+                    Nous proposons à nos clients de les accompagner dans le développement de leur présence en ligne, en leur fournissant un service complet et adapté.
                 </p>
 
               </div>
@@ -106,7 +124,7 @@
               <div id="pane2" class="" data-anchor="slide2">
 
                 <p>
-                  Véritable carte de visite en ligne, le site web est également une porte d'entrée vers l'univers de l'artiste. C'est pourquoi nous travaillons à concevoir des sites web professionnels et originaux, en adéquation avec l'univers de nos clients et adaptés à tous les supports numériques (ordinateurs, tablettes, mobiles).<br>
+                  Véritable carte de visite en ligne, le site web est également une porte d'entrée vers l'univers de l'artiste. C'est pourquoi nous concevons des sites web professionnels et originaux, en adéquation avec l'univers de nos clients et adaptés à tous les supports numériques (ordinateurs, tablettes, mobiles).<br>
                   Conscients qu'un beau design n'est rien sans un contenu de qualité, nous proposons également à nos clients des services complémentaires en nous appuyant sur notre réseau de professionnels.
                 </p>
 
@@ -194,10 +212,11 @@
           <!-- CONTACT -->
           <section id="contact" class="section" data-anchor="_contact">
 
-              <h4 class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">Nous avons hâte de vous rencontrer.<br>
-                  Parlez-nous de votre projet !</h4>
+              <h4 class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">Nous avons hâte de vous rencontrer !<br>
+              Parlez-nous de votre projet <a href="tel:0663351022">au téléphone</a>, <a href="mailto:hello@a-f.studio">par email</a> ou via notre <a href="#">formulaire de demande de devis</a> <br>
+              </h4>
 
-              <ul class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">
+              <!-- <ul class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">
 
                   <li><a href="mailto:hello@a-f.studio">ecrivez-nous</a></li>
                   <br>
@@ -205,7 +224,10 @@
 
               </ul>
 
-              <a class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0" id="contact-form-btn" href="#">formulaire de contact</a>
+              <a class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0" id="contact-form-btn" href="#">formulaire de contact</a> -->
+
+              <div id="map" class="map">
+              </div>
 
               <footer>
                   © 2017 <a href="index.html">a+f</a> | <a href="#">mentions légales</a>
@@ -224,6 +246,7 @@
 <script src="js/jquery.easings.min.js"></script>
 <script src="js/jquery.fullpage.min.js"></script>
 <script src="js/parallax-background.min.js"></script>
+<script src="js/jqfloat.min.js"></script>
 <script src="js/overlay.js"></script>
 <script src="js/main.js"></script>
 
@@ -235,7 +258,6 @@
     controlArrows: false,
     slidesNavigation: false,
     slidesNavPosition: 'bottom',
-    fadingEffect: true,
     autoScrolling: false,
     fitToSectionDelay: 100,
 	});
@@ -243,6 +265,18 @@
     // $('.animate').scrolla();
     // PARALLAX
     $('.parallax').parallaxBackground();
+
+    // FLOAT
+    $('span.underline').jqFloat({
+		width: 100,
+		height: 100,
+		speed: 1000
+	});
+</script>
+
+<!-- GOOGLE MAPS -->
+<script async defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9TJp2UDkejDjjsiC-Zlnm7rlJWOPLP00&callback=initMap">
 </script>
 
 <!-- GOOGLE ANALYTICS -->

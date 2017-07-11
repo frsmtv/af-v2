@@ -11,14 +11,14 @@ $(document).ready(function () {
             $('h1').css('margin-top', '6px');
             // $('span.title').css('opacity', '0');
             $('.toggle-button').css('top', '10px');
-            $('#contact-link').css('bottom', '20px')
+            $('#contact-link').css('top', '10px')
 
           } else {
             // $('h1').css('opacity', '');
             $('h1').css('margin-top', '');
             // $('span.title').css('opacity', '');
             $('.toggle-button').css('top', '');
-            $('#contact-link').css('bottom', '')
+            $('#contact-link').css('top', '')
       }
     });
 
@@ -125,5 +125,97 @@ $(document).ready(function () {
     $('#single-princess .single-next a').mouseleave(function(){
       $('#single-princess .single-next').css("background-image", "");
     })
+
+    // GOOGLE MAPS
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 45.745877, lng: 4.842133},
+        zoom: 15,
+        styles: [
+    {
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#444444"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#f2f2f2"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 45
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#4f595d"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    }
+]
+});
+var myLatLng = {lat: 45.745877, lng: 4.842133};
+var marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      title: 'Hello World!'
+    });
 
 });

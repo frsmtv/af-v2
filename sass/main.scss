@@ -45,6 +45,12 @@ hr {
   display: none;
 }
 
+// .parallax {
+//   height: 500px;
+//   width: 100%;
+//   z-index: -100!important;
+// }
+
 main {
   margin: auto;
   // padding: 0 60px;
@@ -75,13 +81,7 @@ main {
     }
   }
   #intro {
-    // background: #333;
-    // color: white;
-    // text-shadow: $textShadow;
-    // background: url('../img/camera.png');
-    // background-repeat: no-repeat;
-    // // background-size: contain;
-    // background-position: center bottom;
+    // background: #FC6341;
     cursor: url('../img/cursor.cur'), pointer;
     width: 100vw;
     max-width: 1200px;
@@ -90,15 +90,14 @@ main {
     h2 {
       font-size: 4vw;
       padding: 0;
-      margin: 0;
+      margin: 0 auto;
       text-align: left;
       line-height: 4vw;
       width: 90%;
-      position: absolute;
-      // z-index: 99999;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%); /* Yep! */
+      // position: absolute;
+      // left: 50%;
+      // top: 50%;
+      // transform: translate(-50%, -50%); /* Yep! */
       span {
         // color: $secondColor;
         -webkit-transition: all 400ms ease-in;
@@ -120,9 +119,7 @@ main {
   transition: all 400ms ease-in;
       span.underline {
         color: $secondColor;
-        &:last-child {
-          font-family: $secondFont;
-        }
+        font-family: $secondFont;
     }
   }
     }

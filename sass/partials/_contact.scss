@@ -2,16 +2,21 @@
 
 #contact {
   width: 100%;
-  padding: 0;
-  // background: url('../img/test.jpg');
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  text-align: center;
+  padding: 0 5%;
+  text-align: left;
   h4 {
-    font-size: 5vw;
+    font-size: 4vw;
     margin: 0;
     margin-bottom: 40px;
     color: $mainColor;
+    a {
+      color: $secondColor;
+      &:hover {
+        font-family: $secondFont;
+        text-decoration: line-through;
+        text-transform: uppercase;
+      }
+    }
   }
   ul {
     padding: 0;
@@ -37,7 +42,8 @@
       a:hover {
         font-family: $secondFont;
         color: $secondColor;
-        text-decoration: overline;
+        text-decoration: line-through;
+        font-variant: small-caps;
       }
       &:last-child {
         // font-size: 80%;
@@ -59,4 +65,10 @@
       font-family: $secondFont;
     }
   }
+}
+
+div.map {
+  height: 40%;
+  width: 100%;
+  float: right;
 }

@@ -35,9 +35,10 @@
         font-size: 1.2vw;
         line-height: 1.5;
         a {
+          letter-spacing: 2px;
           color: $secondColor;
           padding-bottom: 4px;
-          border-bottom: 4px solid $secondColor;
+          border-bottom: 1px solid $secondColor;
           &:hover {
             font-family: $secondFont;
           }
@@ -47,6 +48,7 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         font-size: 1vw;
+        font-weight: bold;
       }
     }
   }

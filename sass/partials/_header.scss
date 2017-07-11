@@ -15,37 +15,26 @@ header {
    }
   h1 {
     position: relative;
-    font-size: 3rem;
-    margin-top: 60px;
+    font-size: 2rem;
+    // font-family: $secondFont;
+    margin-left: 30px;
+    margin-top: 52px;
     margin-bottom: 0;
     line-height: .6;
+    text-shadow: $textShadow;
     @media (max-width: 620px) {
       font-size: 3rem;
       margin-top: 20px;
      }
     -webkit-transition: all 400ms ease-in;
--moz-transition: all 400ms ease-in;
--ms-transition: all 400ms ease-in;
--o-transition: all 400ms ease-in;
-transition: all 400ms ease-in;
+    -moz-transition: all 400ms ease-in;
+    -ms-transition: all 400ms ease-in;
+    -o-transition: all 400ms ease-in;
+    transition: all 400ms ease-in;
     span {
-      // color: $secondColor;
-//       -webkit-transition: all 400ms ease-in;
-// -moz-transition: all 400ms ease-in;
-// -ms-transition: all 400ms ease-in;
-// -o-transition: all 400ms ease-in;
-// transition: all 400ms ease-in;
+      color: $secondColor;
     }
     a:hover {
-      // font-family: $secondFont;
-      // color: $secondColor;
-  //     -webkit-transition: all 400ms ease-in;
-  // -moz-transition: all 400ms ease-in;
-  // -ms-transition: all 400ms ease-in;
-  // -o-transition: all 400ms ease-in;
-  // transition: all 400ms ease-in;
-      // color: white!important;
-      // text-shadow: $textShadow;
     }
   }
   span.sub {
@@ -54,16 +43,35 @@ transition: all 400ms ease-in;
     font-size:60%;
     font-family: $secondFont;
     vertical-align: middle;
-//     -webkit-transition: all 400ms ease-in;
-// -moz-transition: all 400ms ease-in;
-// -ms-transition: all 400ms ease-in;
-// -o-transition: all 400ms ease-in;
-// transition: all 400ms ease-in;
+}
+ul.contact-head {
+  display: none;
+  line-height: 1.5;
+  font-size: .8rem;
+  position: fixed;
+  z-index: -1;
+  top: 48px;
+  right: 40px;
+  li {
+    margin-left: 40px;
+    a {
+      -webkit-transition: all 400ms ease-in;
+      -moz-transition: all 400ms ease-in;
+      -ms-transition: all 400ms ease-in;
+      -o-transition: all 400ms ease-in;
+      transition: all 400ms ease-in;
+      &:hover {
+          text-decoration: line-through;
+          color: $secondColor;
+      }
+    }
+  }
 }
 #contact-link {
+  // display: none;
   position: fixed;
   right: 60px;
-  bottom: 60px;
+  top: 60px;
   letter-spacing: 2px;
   padding-bottom: 4px;
   border-bottom: 1px solid $mainColor;
