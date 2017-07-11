@@ -8,10 +8,10 @@ $(document).ready(function () {
           scroll_start = $(this).scrollTop();
           if(scroll_start > offset.top) {
             // $('h1').css('opacity', '1');
-            $('h1').css('margin-top', '6px');
+            $('h1').css('margin-top', '2px');
             // $('span.title').css('opacity', '0');
             $('.toggle-button').css('top', '10px');
-            $('#contact-link').css('top', '10px')
+            $('#contact-link').css('top', '16px')
 
           } else {
             // $('h1').css('opacity', '');
@@ -217,5 +217,12 @@ var marker = new google.maps.Marker({
       map: map,
       title: 'Hello World!'
     });
+
+    // ACTIVATE POINTER EVENTS ON CLICK ON MAP
+      $('#map').css('pointer-events', 'none');
+
+      $('.map-wrapper').click(function() {
+        $('#map').css('pointer-events', 'auto');
+      });
 
 });
