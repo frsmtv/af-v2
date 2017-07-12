@@ -23,7 +23,7 @@ $(document).ready(function () {
     });
 
     // UI ANIMATION
-    $('body').addClass('animated fadeIn');
+    $('main').addClass('animated fadeIn');
 
 
     // $('header h1').mouseover(function(){
@@ -50,81 +50,81 @@ $(document).ready(function () {
 
     // PORTFOLIO
 
-    $('#portfolio li').mouseover(function(){
-      $('#portfolio li').not(this).css('opacity', '.1');
-    })
+    // $('#portfolio li').mouseover(function(){
+    //   $('#portfolio li').not(this).css('opacity', '.1');
+    // })
+    //
+    // $('#portfolio li').mouseleave(function(){
+    //   $('#portfolio li').not(this).css('opacity', '');
+    // })
 
-    $('#portfolio li').mouseleave(function(){
-      $('#portfolio li').not(this).css('opacity', '');
-    })
-
-    // WOCO
-    $('#woco-hover').mouseover(function(){
-        $('.hover-img').css("background-image", "url(img/mock1.png)");
-        $('.hover-img').css('opacity', '1');
-    })
-    $('#woco-hover').mouseleave(function(){
-        $('.hover-img').css("background-image", "");
-        $('.hover-img').css('opacity', '');
-    })
-
-    // PRINCESS
-    $('#princess-hover').mouseover(function(){
-        $('.hover-img').css("background-image", "url(img/mock2.png)");
-        $('.hover-img').css('opacity', '1');
-    })
-    $('#princess-hover').mouseleave(function(){
-        $('.hover-img').css("background-image", "");
-        $('.hover-img').css('opacity', '');
-    })
-
-    // FSIMITCHIEV
-    $('#fsimitchiev-hover').mouseover(function(){
-        $('.hover-img').css("background-image", "url(img/mock3.png)");
-        $('.hover-img').css('opacity', '1');
-    })
-    $('#fsimitchiev-hover').mouseleave(function(){
-        $('.hover-img').css("background-image", "");
-        $('.hover-img').css('opacity', '');
-    })
-
-    // IRAY
-    $('#iray-hover').mouseover(function(){
-        $('.hover-img').css("background-image", "url(img/mock4.png)");
-        $('.hover-img').css('opacity', '1');
-    })
-    $('#iray-hover').mouseleave(function(){
-        $('.hover-img').css("background-image", "");
-        $('.hover-img').css('opacity', '');
-    })
-
-    // IRAY
-    $('#sixring-hover').mouseover(function(){
-        $('.hover-img').css("background-image", "url(img/mock5.png)");
-        $('.hover-img').css('opacity', '1');
-    })
-    $('#sixring-hover').mouseleave(function(){
-        $('.hover-img').css("background-image", "");
-        $('.hover-img').css('opacity', '');
-    })
+    // // WOCO
+    // $('#woco-hover').mouseover(function(){
+    //     $('.hover-img').css("background-image", "url(img/mock1.png)");
+    //     $('.hover-img').css('opacity', '1');
+    // })
+    // $('#woco-hover').mouseleave(function(){
+    //     $('.hover-img').css("background-image", "");
+    //     $('.hover-img').css('opacity', '');
+    // })
+    //
+    // // PRINCESS
+    // $('#princess-hover').mouseover(function(){
+    //     $('.hover-img').css("background-image", "url(img/mock2.png)");
+    //     $('.hover-img').css('opacity', '1');
+    // })
+    // $('#princess-hover').mouseleave(function(){
+    //     $('.hover-img').css("background-image", "");
+    //     $('.hover-img').css('opacity', '');
+    // })
+    //
+    // // FSIMITCHIEV
+    // $('#fsimitchiev-hover').mouseover(function(){
+    //     $('.hover-img').css("background-image", "url(img/mock3.png)");
+    //     $('.hover-img').css('opacity', '1');
+    // })
+    // $('#fsimitchiev-hover').mouseleave(function(){
+    //     $('.hover-img').css("background-image", "");
+    //     $('.hover-img').css('opacity', '');
+    // })
+    //
+    // // IRAY
+    // $('#iray-hover').mouseover(function(){
+    //     $('.hover-img').css("background-image", "url(img/mock4.png)");
+    //     $('.hover-img').css('opacity', '1');
+    // })
+    // $('#iray-hover').mouseleave(function(){
+    //     $('.hover-img').css("background-image", "");
+    //     $('.hover-img').css('opacity', '');
+    // })
+    //
+    // // IRAY
+    // $('#sixring-hover').mouseover(function(){
+    //     $('.hover-img').css("background-image", "url(img/mock5.png)");
+    //     $('.hover-img').css('opacity', '1');
+    // })
+    // $('#sixring-hover').mouseleave(function(){
+    //     $('.hover-img').css("background-image", "");
+    //     $('.hover-img').css('opacity', '');
+    // })
 
     // PORTFOLIO > SINGLE
 
     // WOCO
     $('#single-woco .single-next a').mouseover(function(){
       $('#single-woco .single-next').css("background-image", "url(img/mock2.png)");
-    })
+    });
     $('#single-woco .single-next a').mouseleave(function(){
       $('#single-woco .single-next').css("background-image", "");
-    })
+    });
 
     // PRINCESS
     $('#single-princess .single-next a').mouseover(function(){
       $('#single-princess .single-next').css("background-image", "url(img/mock3.png)");
-    })
+    });
     $('#single-princess .single-next a').mouseleave(function(){
       $('#single-princess .single-next').css("background-image", "");
-    })
+    });
 
     // GOOGLE MAPS
     map = new google.maps.Map(document.getElementById('map'), {
@@ -212,11 +212,28 @@ $(document).ready(function () {
 ]
 });
 var myLatLng = {lat: 45.745877, lng: 4.842133};
+
+function pinSymbol(color) {
+    return {
+        path: 'M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z M -2,-30 a 2,2 0 1,1 4,0 2,2 0 1,1 -4,0',
+        fillColor: color,
+        fillOpacity: 1,
+        strokeColor: '#fff',
+        strokeWeight: 2,
+        scale: 1,
+   };
+}
+
 var marker = new google.maps.Marker({
-      position: myLatLng,
-      map: map,
-      title: 'Hello World!'
-    });
+   map: map,
+   position: new google.maps.LatLng(45.745877, 4.842133),
+   icon: pinSymbol("#00FFD2")
+});
+
+// var marker = new google.maps.Marker({
+//       position: myLatLng,
+//       map: map,
+//     });
 
     // ACTIVATE POINTER EVENTS ON CLICK ON MAP
       $('#map').css('pointer-events', 'none');

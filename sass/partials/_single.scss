@@ -11,7 +11,7 @@
     cursor: url('../img/cursor.cur'), pointer;
     text-align: center;
     img {
-      width: 60%;
+      width: 50%;
     }
   }
   .single-content {
@@ -27,7 +27,7 @@
       // transform: translate(-50%, -50%); /* Yep! */
 
     h2 {
-      font-size: 5vw;
+      font-size: 3rem;
       letter-spacing: 4px;
       margin-top: 0;
       span.sub {
@@ -45,8 +45,8 @@
       margin: 0 auto;
       padding: 0;
       line-height: 2;
-      font-size: 1vw;
-      letter-spacing: 2px;
+      font-size: .8rem;
+      letter-spacing: 3px;
       text-transform: uppercase;
       span {
         font-weight: bold;
@@ -69,6 +69,7 @@
     // right: 0;
     // margin: auto;
     text-align: center;
+    text-shadow: $textShadow;
     background: url('../img/blank.jpg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -79,7 +80,8 @@
 -o-transition: all 900ms ease-in;
 transition: all 900ms ease-in;
     a {
-      font-size: 2vw;
+      font-size: 1.2rem;
+      letter-spacing: 2px;
       span {
         font-size: 50%;
         text-transform: uppercase;

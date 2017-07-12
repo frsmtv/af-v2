@@ -5,6 +5,7 @@
 @import "partials/footer";
 @import "partials/contact";
 @import "partials/summer";
+@import "partials/blog";
 @import "partials/mixins";
 
 // KATANAS EDGE FONT
@@ -84,16 +85,22 @@ main {
     // background: #FC6341;
     cursor: url('../img/cursor.cur'), pointer;
     width: 100vw;
-    max-width: 1200px;
+    // max-width: 1200px;
     height: 100vh;
     padding: 0;
     h2 {
-      font-size: 4vw;
+      font-size: 3rem;
       padding: 0;
       margin: 0 auto;
       text-align: left;
-      line-height: 4vw;
+      line-height: 1;
       width: 90%;
+      @media only screen and (max-device-width: 768px){
+        font-size: 2rem;
+      }
+      @media only screen and (max-device-width: 568px){
+        font-size: 1.5rem;
+      }
       // position: absolute;
       // left: 50%;
       // top: 50%;

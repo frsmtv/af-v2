@@ -4,13 +4,12 @@ footer {
   background: transparent;
   text-align: center;
   font-size: .8rem;
-  padding: 20px;
-  position: absolute;
-  width: 80%;
-  left: 0;
-  right: 0;
+  padding: 80px 0 0 0;
+  // position: absolute;
+  // width: 80%;
+  // left: 0;
+  // right: 0;
   margin: auto;
-  bottom: 40px;
   @media (max-width: 768px) and (orientation:landscape) {
    }
    @media (max-width: 768px) {
