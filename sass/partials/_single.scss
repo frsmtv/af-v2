@@ -12,6 +12,12 @@
     text-align: center;
     img {
       width: 50%;
+      @media only screen and (max-device-width: 740px){
+        width: 100%;
+      }
+      @media only screen and (max-device-width: 740px) and (orientation: landscape){
+        width: 70%;
+      }
     }
   }
   .single-content {
@@ -44,6 +50,7 @@
       width: 50%;
       @media only screen and (max-device-width: 740px){
         width: 100%;
+        text-align: justify;
       }
       margin: 0 auto;
       padding: 0;
