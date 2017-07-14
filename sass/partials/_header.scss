@@ -23,8 +23,9 @@ header {
     line-height: .6;
     text-shadow: $textShadow;
     @media (max-width: 620px) {
-      font-size: 3rem;
-      margin-top: 20px;
+      // font-size: 3rem;
+      margin-top: 13px;
+      margin-left: 70px;
      }
     -webkit-transition: all 400ms ease-in;
     -moz-transition: all 400ms ease-in;
@@ -46,6 +47,7 @@ header {
 }
 ul.contact-head {
   display: none;
+  // display: flex;
   line-height: 1.5;
   font-size: .8rem;
   position: fixed;
@@ -71,10 +73,10 @@ ul.contact-head {
   // display: none;
   position: fixed;
   right: 60px;
-  top: 60px;
-  letter-spacing: 2px;
+  top: 80px;
+  // letter-spacing: 2px;
   padding-bottom: 4px;
-  border-bottom: 1px solid $mainColor;
+  border-bottom: 0px solid $mainColor;
   -webkit-transition: all 400ms ease-in;
   -moz-transition: all 400ms ease-in;
   -ms-transition: all 400ms ease-in;
@@ -84,5 +86,10 @@ ul.contact-head {
     color: $secondColor;
     border-bottom: 1px solid $secondColor;
   }
+  @media (max-width: 620px) {
+    font-size: .8rem;
+    top: 35px;
+    right: 10px;
+   }
 }
 }

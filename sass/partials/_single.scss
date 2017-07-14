@@ -31,6 +31,7 @@
       letter-spacing: 4px;
       margin-top: 0;
       span.sub {
+        padding-top: 20px;
         font-family: $mainFont;
         color: $mainColor;
         font-size: 40%;
@@ -39,9 +40,11 @@
 
       }
     }
-
     p {
       width: 50%;
+      @media only screen and (max-device-width: 740px){
+        width: 100%;
+      }
       margin: 0 auto;
       padding: 0;
       line-height: 2;
@@ -50,12 +53,20 @@
       text-transform: uppercase;
       span {
         font-weight: bold;
-        font-size: 1.2vw;
+        font-size: 1rem;
         letter-spacing: 4px;
         &:first-child {
 
         }
       }
+    }
+    p.brief {
+      text-transform: none;
+      font-family: serif;
+      margin-top: 40px;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      line-height: 1.6;
     }
     }
   }

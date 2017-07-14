@@ -7,16 +7,12 @@ $(document).ready(function () {
       $(document).scroll(function() {
           scroll_start = $(this).scrollTop();
           if(scroll_start > offset.top) {
-            // $('h1').css('opacity', '1');
             $('h1').css('margin-top', '2px');
-            // $('span.title').css('opacity', '0');
             $('.toggle-button').css('top', '10px');
-            $('#contact-link').css('top', '16px')
+            $('#contact-link').css('top', '20px')
 
           } else {
-            // $('h1').css('opacity', '');
             $('h1').css('margin-top', '');
-            // $('span.title').css('opacity', '');
             $('.toggle-button').css('top', '');
             $('#contact-link').css('top', '')
       }
@@ -24,89 +20,6 @@ $(document).ready(function () {
 
     // UI ANIMATION
     $('main').addClass('animated fadeIn');
-
-
-    // $('header h1').mouseover(function(){
-    //   $(this).addClass('text-shadow-pop-right');
-    // })
-    // ('header h1').mouseleave(function(){
-    //   $(this).removeClass('text-shadow-pop-right');
-    // })
-
-
-    // $('header h1').mouseover(function(){
-    //     $('header h1 span').css('color', '#3FCE94');
-    // })
-    // $('header h1').mouseleave(function(){
-    //     $('header h1 span').css('color', '');
-    // })
-
-    // $('header h1').mouseover(function(){
-    //   $('header h1 span.sub').show();
-    // })
-    // $('header h1').mouseleave(function(){
-    //   $('header h1 span.sub').hide();
-    // })
-
-    // PORTFOLIO
-
-    // $('#portfolio li').mouseover(function(){
-    //   $('#portfolio li').not(this).css('opacity', '.1');
-    // })
-    //
-    // $('#portfolio li').mouseleave(function(){
-    //   $('#portfolio li').not(this).css('opacity', '');
-    // })
-
-    // // WOCO
-    // $('#woco-hover').mouseover(function(){
-    //     $('.hover-img').css("background-image", "url(img/mock1.png)");
-    //     $('.hover-img').css('opacity', '1');
-    // })
-    // $('#woco-hover').mouseleave(function(){
-    //     $('.hover-img').css("background-image", "");
-    //     $('.hover-img').css('opacity', '');
-    // })
-    //
-    // // PRINCESS
-    // $('#princess-hover').mouseover(function(){
-    //     $('.hover-img').css("background-image", "url(img/mock2.png)");
-    //     $('.hover-img').css('opacity', '1');
-    // })
-    // $('#princess-hover').mouseleave(function(){
-    //     $('.hover-img').css("background-image", "");
-    //     $('.hover-img').css('opacity', '');
-    // })
-    //
-    // // FSIMITCHIEV
-    // $('#fsimitchiev-hover').mouseover(function(){
-    //     $('.hover-img').css("background-image", "url(img/mock3.png)");
-    //     $('.hover-img').css('opacity', '1');
-    // })
-    // $('#fsimitchiev-hover').mouseleave(function(){
-    //     $('.hover-img').css("background-image", "");
-    //     $('.hover-img').css('opacity', '');
-    // })
-    //
-    // // IRAY
-    // $('#iray-hover').mouseover(function(){
-    //     $('.hover-img').css("background-image", "url(img/mock4.png)");
-    //     $('.hover-img').css('opacity', '1');
-    // })
-    // $('#iray-hover').mouseleave(function(){
-    //     $('.hover-img').css("background-image", "");
-    //     $('.hover-img').css('opacity', '');
-    // })
-    //
-    // // IRAY
-    // $('#sixring-hover').mouseover(function(){
-    //     $('.hover-img').css("background-image", "url(img/mock5.png)");
-    //     $('.hover-img').css('opacity', '1');
-    // })
-    // $('#sixring-hover').mouseleave(function(){
-    //     $('.hover-img').css("background-image", "");
-    //     $('.hover-img').css('opacity', '');
-    // })
 
     // PORTFOLIO > SINGLE
 
@@ -125,6 +38,30 @@ $(document).ready(function () {
     $('#single-princess .single-next a').mouseleave(function(){
       $('#single-princess .single-next').css("background-image", "");
     });
+
+    // F SIMITCHIEV
+    $('#single-fsimitchiev .single-next a').mouseover(function(){
+      $('#single-fsimitchiev .single-next').css("background-image", "url(img/mock4.png)");
+    });
+    $('#single-fsimitchiev .single-next a').mouseleave(function(){
+      $('#single-fsimitchiev .single-next').css("background-image", "");
+    });
+
+    // IRAY
+    $('#single-iray .single-next a').mouseover(function(){
+      $('#single-iray .single-next').css("background-image", "url(img/mock5.png)");
+    });
+    $('#single-iray .single-next a').mouseleave(function(){
+      $('#single-iray .single-next').css("background-image", "");
+    });
+
+    // SIX-RING CIRCUS
+    // $('#single-sixringcircus .single-next a').mouseover(function(){
+    //   $('#single-sixringcircus .single-next').css("background-image", "url(img/mock4.png)");
+    // });
+    // $('#single-sixringcircus .single-next a').mouseleave(function(){
+    //   $('#single-sixringcircus .single-next').css("background-image", "");
+    // });
 
     // GOOGLE MAPS
     map = new google.maps.Map(document.getElementById('map'), {
@@ -229,11 +166,6 @@ var marker = new google.maps.Marker({
    position: new google.maps.LatLng(45.745877, 4.842133),
    icon: pinSymbol("#00FFD2")
 });
-
-// var marker = new google.maps.Marker({
-//       position: myLatLng,
-//       map: map,
-//     });
 
     // ACTIVATE POINTER EVENTS ON CLICK ON MAP
       $('#map').css('pointer-events', 'none');

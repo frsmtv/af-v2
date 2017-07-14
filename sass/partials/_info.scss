@@ -54,6 +54,7 @@
         font-size: 1rem;
         line-height: 1.6;
         letter-spacing: 1px;
+        font-family: serif;
         a {
           font-weight: bold;
           letter-spacing: 2px;
@@ -72,8 +73,9 @@
       }
       p.complementaire {
         text-transform: uppercase;
+        font-family: $mainFont;
         letter-spacing: 2px;
-        font-size: 1rem;
+        font-size: .8rem;
         font-weight: bold;
       }
     }
