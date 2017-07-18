@@ -40,9 +40,9 @@
         padding-top: 20px;
         font-family: $mainFont;
         color: $mainColor;
-        font-size: 40%;
+        font-size: 30%;
         display: block;
-        font-weight: normal;
+        letter-spacing: 2px;
 
       }
     }
@@ -74,6 +74,21 @@
       font-size: 1rem;
       letter-spacing: 1px;
       line-height: 1.6;
+      a {
+        background: $mainColor;
+        color: white;
+        padding: 1.5%;
+        -webkit-transition: all 400ms ease-in;
+        -moz-transition: all 400ms ease-in;
+        -ms-transition: all 400ms ease-in;
+        -o-transition: all 400ms ease-in;
+        transition: all 400ms ease-in;
+        &:hover {
+          color: $mainColor;
+          background: none;
+          border-bottom: 1px solid $mainColor;
+        }
+      }
     }
     }
   }
@@ -100,13 +115,14 @@ transition: all 900ms ease-in;
     a {
       font-size: 1.2rem;
       letter-spacing: 2px;
+      padding-bottom: 1%;
+      border-bottom: 1px solid $mainColor;
       span {
         font-size: 50%;
         text-transform: uppercase;
         letter-spacing: 2px;
       }
       &:hover {
-        // text-shadow: 0 -2px 1px #fff;
       }
     }
   }

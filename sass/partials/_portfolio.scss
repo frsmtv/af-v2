@@ -56,7 +56,6 @@
         transition: all 400ms ease-in;
         &:hover {
           color: $secondColor;
-          cursor: crosshair;
         }
         &:after {
           content: ", "

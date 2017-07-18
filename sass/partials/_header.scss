@@ -45,37 +45,13 @@ header {
     font-family: $secondFont;
     vertical-align: middle;
 }
-ul.contact-head {
-  display: none;
-  // display: flex;
-  line-height: 1.5;
-  font-size: .8rem;
-  position: fixed;
-  z-index: -1;
-  top: 48px;
-  right: 40px;
-  li {
-    margin-left: 40px;
-    a {
-      -webkit-transition: all 400ms ease-in;
-      -moz-transition: all 400ms ease-in;
-      -ms-transition: all 400ms ease-in;
-      -o-transition: all 400ms ease-in;
-      transition: all 400ms ease-in;
-      &:hover {
-          text-decoration: line-through;
-          color: $secondColor;
-      }
-    }
-  }
-}
 #contact-link {
   // display: none;
   position: fixed;
   right: 60px;
   top: 80px;
-  // letter-spacing: 2px;
-  padding-bottom: 4px;
+  font-size: .8rem;
+  padding-bottom: 1%;
   border-bottom: 0px solid $mainColor;
   -webkit-transition: all 400ms ease-in;
   -moz-transition: all 400ms ease-in;
