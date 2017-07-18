@@ -137,3 +137,6 @@ fabric.properties
 # *.ipr
 
 # End of https://www.gitignore.io/api/osx,node,bower,phpstorm
+### ignore files
+### Added by Antoine
+.htaccess
