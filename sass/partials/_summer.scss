@@ -34,7 +34,6 @@
       }
     }
     h2 {
-      margin-top: -10px!important;
       color: $mainColor;
       width: 100%;
       font-size: 2rem;
@@ -44,6 +43,9 @@
       margin: 0;
       @media only screen and (max-device-width: 768px){
         font-size: 1.2rem;
+      }
+      @media only screen and (min-device-width: 1080px){
+        margin-top: 50px;
       }
       a#summer-go {
         margin-top: 30vh;
