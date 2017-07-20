@@ -21,6 +21,11 @@ $(document).ready(function () {
     // UI ANIMATION
     $('main').addClass('animated fadeIn');
 
+    // SUMMER POP-UP CLOSE
+    $('#summer_popup i').click(function(){
+      $('#summer_popup').fadeOut();
+    })
+
     // PORTFOLIO > SINGLE
 
     // WOCO

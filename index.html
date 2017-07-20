@@ -69,6 +69,19 @@
     <!-- MAIN -->
     <main>
 
+        <!-- SUMMER OFFER -->
+        <!-- Add content to the popup -->
+       <div id="summer_popup" class="animated">
+         <p>
+             Offre spéciale été : -30% sur la création de votre site web.
+         </p>
+
+         <a href="summer.html">En savoir plus</a>
+
+         <i class="fa fa-times-circle" aria-hidden="true"></i>
+
+       </div>
+
         <div id="fullpage">
 
             <!-- INTRO -->
@@ -231,6 +244,14 @@
 		height: 1,
 		speed: 1000
 	});
+
+</script>
+
+<!-- SUMMER POP-UP -->
+<script type="text/javascript">
+
+    window.setTimeout(function(){$("#summer_popup").show().addClass("bounceInUp");}, 5000);
+
 </script>
 
 <!-- GOOGLE MAPS -->

@@ -1,0 +1,46 @@
+@import "mixins";
+
+#summer_popup {
+  display: none;
+  z-index: 9999;
+  color: $mainColor;
+  background: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 10%;
+  transform: translate(-50%, -50%); /* Yep! */
+  padding: 1%;
+  padding-bottom: 6px;
+  width: 50%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  text-align: center;
+  border: 1px solid $mainColor;
+  // cursor: pointer!important;
+  font-weight: bold;
+  a {
+    background: $mainColor;
+    color: $secondColor;
+    padding: 1%;
+    font-size: .8rem;
+    -webkit-transition: all 400ms ease-in;
+    -moz-transition: all 400ms ease-in;
+    -ms-transition: all 400ms ease-in;
+    -o-transition: all 400ms ease-in;
+    transition: all 400ms ease-in;
+    &:hover {
+      background: white;
+      color: $mainColor;
+      border-bottom: 1px solid $mainColor;
+    }
+  }
+  i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+  }
+}
