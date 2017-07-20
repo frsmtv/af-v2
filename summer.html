@@ -74,21 +74,18 @@
 
           <div class="summer-head">
 
+              <img id="duck" src="img/duck.png" alt="">
+
               <img src="img/summer.png" alt="">
 
             <h2>Envie de prendre des vacances ? <br>
             Confiez-nous la création ou la refonte de votre site web <br>
             avant le 31 juillet
-            et payez 30% moins cher !*<br>
+            et payez 30% moins cher !<br>
             <br>
             <a id="summer-go" href="index.html#_contact">Contactez-nous dès maintenant !</a></h2>
 
           </div>
-
-          <p>
-            *Réduction de 30% uniquement sur les prestations de design et développement de site web.
-            Les prestations complémentaires étant réalisées par d'autres professionnels de notre réseau, aucune réduction ne leur est applicable.
-          </p>
 
         </section>
 
@@ -97,18 +94,18 @@
 <!-- SCRIPTS -->
 <script src="js/jquery.min.js"></script>
 <script src="js/overlay.js"></script>
-<script src="js/jquery.ripples-min.js"></script>
+<script src="js/jqfloat.min.js"></script>
 <script src="js/main.js"></script>
 
 <!-- RIPPLES -->
 <script>
 
-  $('body').ripples({
-    dropRadius: 20,
-    perturbance: 0.02,
-    interactive: true,
-    resolution: 1024,
-  });
+  // FLOAT
+$('#duck').jqFloat({
+  width: 100,
+  height: 100,
+  speed: 5000
+});
 
 </script>
 

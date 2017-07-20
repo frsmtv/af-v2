@@ -11,6 +11,20 @@
   height: 80vh;
   .summer-head {
     color: white;
+    #duck {
+      display: block;
+      position: absolute;
+      top: 50vh;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 100px;
+      z-index: 0;
+      @media only screen and (max-device-width: 768px){
+        top: 35vh;
+        width: 50px;
+      }
+    }
     img {
       display: none;
       margin: auto;
@@ -57,22 +71,6 @@
           border-bottom: 1px solid $mainColor;
         }
       }
-    }
-  }
-  p {
-    padding: 60px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    font-family: sans-serif;
-    font-size: .8rem;
-    font-style: italic;
-    text-shadow: none;
-    margin-bottom: 0;
-    @media only screen and (max-device-width: 768px){
-      position: relative;
-      padding: 0;
-      margin-top: 100px;
     }
   }
 }
