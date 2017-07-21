@@ -7,11 +7,11 @@ section.blog-page {
     margin-bottom: 80px;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
   }
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     font-weight: lighter;
     margin-bottom: 80px;
@@ -21,11 +21,15 @@ section.blog-page {
     margin: auto;
     text-align: justify;
     margin-top: 100px;
-    p {
+    padding: 0 60px;
+    p, ul {
       line-height: 1.6;
       letter-spacing: .6px;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-family: serif;
+    }
+    ul li {
+      margin-bottom: 20px;
     }
   }
 }
@@ -35,7 +39,7 @@ hr {
 h3 {
   font-size: 1.2rem!important;
   line-height: 1.2!important;
-  padding: 0 60px;
+  padding: 0 110px;
   a {
     // color: $secondColor;
     border-bottom: 1px solid $mainColor;
