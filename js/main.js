@@ -65,107 +65,107 @@ $(document).scroll(function() {
 		$('#contact-link').css('top', '')
 	}
 });
-// GOOGLE MAPS
-function initMap()
-{
-	// var myLatLng = {lat: 45.745877, lng: 4.842133};
-	let map = new google.maps.Map(document.getElementById('map'), {
-		center: {lat: 45.745877, lng: 4.842133},
-		zoom: 15,
-		styles: [
-			{
-				"featureType": "administrative",
-				"elementType": "labels.text.fill",
-				"stylers": [
-					{
-						"color": "#444444"
-					}
-				]
-			},
-			{
-				"featureType": "landscape",
-				"elementType": "all",
-				"stylers": [
-					{
-						"color": "#f2f2f2"
-					}
-				]
-			},
-			{
-				"featureType": "poi",
-				"elementType": "all",
-				"stylers": [
-					{
-						"visibility": "off"
-					}
-				]
-			},
-			{
-				"featureType": "road",
-				"elementType": "all",
-				"stylers": [
-					{
-						"saturation": -100
-					},
-					{
-						"lightness": 45
-					}
-				]
-			},
-			{
-				"featureType": "road.highway",
-				"elementType": "all",
-				"stylers": [
-					{
-						"visibility": "simplified"
-					}
-				]
-			},
-			{
-				"featureType": "road.arterial",
-				"elementType": "labels.icon",
-				"stylers": [
-					{
-						"visibility": "off"
-					}
-				]
-			},
-			{
-				"featureType": "transit",
-				"elementType": "all",
-				"stylers": [
-					{
-						"visibility": "off"
-					}
-				]
-			},
-			{
-				"featureType": "water",
-				"elementType": "all",
-				"stylers": [
-				{
-					"color": "#4f595d"
-				},
-				{
-					"visibility": "on"
-				}
-				]
-			}
-		]
-	});
-	function pinSymbol(color) {
-		return {
-			path: 'M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z M -2,-30 a 2,2 0 1,1 4,0 2,2 0 1,1 -4,0',
-			fillColor: color,
-			fillOpacity: 1,
-			strokeColor: '#fff',
-			strokeWeight: 2,
-			scale: 1,
-		};
-	}
-	var marker = new google.maps.Marker({
-		map: map,
-		position: new google.maps.LatLng(45.745877, 4.842133),
-		icon: pinSymbol("#00FFD2")
-	});
-}
+// // GOOGLE MAPS
+// function initMap()
+// {
+// 	// var myLatLng = {lat: 45.745877, lng: 4.842133};
+// 	let map = new google.maps.Map(document.getElementById('map'), {
+// 		center: {lat: 45.745877, lng: 4.842133},
+// 		zoom: 15,
+// 		styles: [
+// 			{
+// 				"featureType": "administrative",
+// 				"elementType": "labels.text.fill",
+// 				"stylers": [
+// 					{
+// 						"color": "#444444"
+// 					}
+// 				]
+// 			},
+// 			{
+// 				"featureType": "landscape",
+// 				"elementType": "all",
+// 				"stylers": [
+// 					{
+// 						"color": "#f2f2f2"
+// 					}
+// 				]
+// 			},
+// 			{
+// 				"featureType": "poi",
+// 				"elementType": "all",
+// 				"stylers": [
+// 					{
+// 						"visibility": "off"
+// 					}
+// 				]
+// 			},
+// 			{
+// 				"featureType": "road",
+// 				"elementType": "all",
+// 				"stylers": [
+// 					{
+// 						"saturation": -100
+// 					},
+// 					{
+// 						"lightness": 45
+// 					}
+// 				]
+// 			},
+// 			{
+// 				"featureType": "road.highway",
+// 				"elementType": "all",
+// 				"stylers": [
+// 					{
+// 						"visibility": "simplified"
+// 					}
+// 				]
+// 			},
+// 			{
+// 				"featureType": "road.arterial",
+// 				"elementType": "labels.icon",
+// 				"stylers": [
+// 					{
+// 						"visibility": "off"
+// 					}
+// 				]
+// 			},
+// 			{
+// 				"featureType": "transit",
+// 				"elementType": "all",
+// 				"stylers": [
+// 					{
+// 						"visibility": "off"
+// 					}
+// 				]
+// 			},
+// 			{
+// 				"featureType": "water",
+// 				"elementType": "all",
+// 				"stylers": [
+// 				{
+// 					"color": "#4f595d"
+// 				},
+// 				{
+// 					"visibility": "on"
+// 				}
+// 				]
+// 			}
+// 		]
+// 	});
+// 	function pinSymbol(color) {
+// 		return {
+// 			path: 'M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z M -2,-30 a 2,2 0 1,1 4,0 2,2 0 1,1 -4,0',
+// 			fillColor: color,
+// 			fillOpacity: 1,
+// 			strokeColor: '#fff',
+// 			strokeWeight: 2,
+// 			scale: 1,
+// 		};
+// 	}
+// 	var marker = new google.maps.Marker({
+// 		map: map,
+// 		position: new google.maps.LatLng(45.745877, 4.842133),
+// 		icon: pinSymbol("#00FFD2")
+// 	});
+// }
