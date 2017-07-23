@@ -5,8 +5,6 @@ $('#toggle').click(function() {
     $('#contact-link').toggleClass('hide');
     $('main').toggleClass('slide-out-blurred-top');
 });
-
-
 // HIDE MENU ON CLICK ON A LINK
 $('#overlay li').click(function(){
   $('#overlay').toggleClass('nav-active');
