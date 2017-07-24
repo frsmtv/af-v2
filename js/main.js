@@ -10,22 +10,6 @@ $(document).ready(function() {
 		fitToSection: false,
 		fitToSectionDelay: 100,
 	});
-	// OVERLAY
-	$('#toggle').click(function() {
-		$(this).toggleClass('toggle-active');
-		$('#overlay').toggleClass('nav-active');
-		$('#overlay li').toggleClass('slit-in-horizontal');
-		$('#contact-link').toggleClass('hide');
-		$('main').toggleClass('slide-out-blurred-top');
-	});
-	// HIDE MENU ON CLICK ON A LINK
-	$('#overlay li').click(function(){
-		$('#overlay').toggleClass('nav-active');
-		$('#toggle').toggleClass('toggle-active');
-		$('#contact-link').toggleClass('hide');
-		$('#overlay li').toggleClass('slit-in-horizontal');
-		$('main').toggleClass('slide-out-blurred-top');
-	});
 	// ANIMATIONS ON SCROLL START
 	// UI ANIMATION
 	$('main').addClass('animated fadeIn');
@@ -86,21 +70,7 @@ $(document).ready(function() {
 		height: 1,
 		speed: 1000
 	});
-	$('#toggle').click(function() {
-		$(this).toggleClass('toggle-active');
-		$('#overlay').toggleClass('nav-active');
-		$('#overlay li').toggleClass('slit-in-horizontal');
-		$('#contact-link').toggleClass('hide');
-		$('main').toggleClass('slide-out-blurred-top');
-	});
-	// HIDE MENU ON CLICK ON A LINK
-	$('#overlay li').click(function(){
-		$('#overlay').toggleClass('nav-active');
-		$('#toggle').toggleClass('toggle-active');
-		$('#contact-link').toggleClass('hide');
-		$('#overlay li').toggleClass('slit-in-horizontal');
-		$('main').toggleClass('slide-out-blurred-top');
-	});
+
 
 	$(document).scroll(function() {
 		var scroll_start = 0;
