@@ -10,6 +10,9 @@
   .single-intro {
     cursor: url('../img/cursor.cur'), pointer;
     text-align: center;
+    @media only screen and (max-device-width: 740px){
+      margin-top: 50px;
+    }
     img {
       width: 50%;
       @media only screen and (max-device-width: 740px){
