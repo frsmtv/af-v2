@@ -1,22 +1,8 @@
 $(document).ready(function() {
-	// FULLPAGE
-	$('#fullpage').fullpage({
-		anchors:['_intro', '_info', '_portfolio', '_contact'],
-		navigation: false,
-		controlArrows: false,
-		slidesNavigation: false,
-		slidesNavPosition: 'bottom',
-		autoScrolling: false,
-		fitToSection: false,
-		fitToSectionDelay: 100,
-	});
 	// ANIMATIONS ON SCROLL START
 	// UI ANIMATION
 	$('main').addClass('animated fadeIn');
-	// SUMMER POP-UP CLOSE
-	$('#summer_popup i').click(function() {
-		$('#summer_popup').fadeOut();
-	})
+	
 	// PORTFOLIO > SINGLE
 	// WOCO
 	$('#single-woco .single-next a').mouseover(function() {
@@ -89,4 +75,16 @@ $(document).ready(function() {
 			$('#contact-link').css('top', '')
 		}
 	});
+	// FULLPAGE
+	$('#fullpage').fullpage({
+		anchors:['_intro', '_info', '_portfolio', '_contact'],
+		navigation: false,
+		controlArrows: false,
+		slidesNavigation: false,
+		slidesNavPosition: 'bottom',
+		autoScrolling: false,
+		fitToSection: false,
+		fitToSectionDelay: 100,
+	});
+
 });
