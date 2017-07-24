@@ -4,8 +4,13 @@ $('#toggle').click(function() {
     $('#overlay li').toggleClass('slit-in-horizontal');
     $('#contact-link').toggleClass('hide');
     $('main').toggleClass('slide-out-blurred-top');
+    $('header h1').css('visibility', 'hidden');
 });
 
+$('#toggle').click(function(){
+  if ( $('header h1').css('visibility') == 'hidden' )
+    $('header h1').css('visibility','visible');
+});
 
 // HIDE MENU ON CLICK ON A LINK
 $('#overlay li').click(function(){
@@ -14,4 +19,5 @@ $('#overlay li').click(function(){
   $('#contact-link').toggleClass('hide');
   $('#overlay li').toggleClass('slit-in-horizontal');
   $('main').toggleClass('slide-out-blurred-top');
+  $('header h1').css('visibility', 'visible');
 });
