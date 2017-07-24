@@ -33,13 +33,13 @@
   }
   .projects-wrapper {
     display: flex;
-    margin-top: -200px;
+    margin-top: -400px;
     @media only screen and (max-device-width: 768px){
       margin-top: 0;
     }
     div {
       width: 100%;
-      font-size: 4rem;
+      font-size: 3rem;
       letter-spacing: 2px;
       @media only screen and (max-device-width: 768px){
         font-size: 3rem;
@@ -49,6 +49,7 @@
         line-height: 1.7;
       }
       a {
+        display: inline;
         -webkit-transition: all 400ms ease-in;
         -moz-transition: all 400ms ease-in;
         -ms-transition: all 400ms ease-in;
@@ -58,7 +59,7 @@
           color: $secondColor;
         }
         &:after {
-          content: ", "
+          // content: ", "
         }
         &:last-child:after {
           content: none;
