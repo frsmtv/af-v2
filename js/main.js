@@ -18,8 +18,8 @@ $(document).ready(function () {
 
     // FLOAT
     $('span.underline').jqFloat({
-		width: 1,
-		height: 1,
+		width: 0,
+		height: 0,
 		speed: 1000
 	});
 
@@ -42,13 +42,13 @@ $(document).ready(function () {
     });
 
     // UI ANIMATION
-    $('main').addClass('animated fadeIn');
+    $('body').addClass('animated fadeIn');
 
     // SUMMER POP-UP CLOSE
     $('#summer_popup i').click(function(){
       $('#summer_popup').fadeOut();
     })
- 
+
     // ACTIVATE POINTER EVENTS ON CLICK ON MAP
       $('#map').css('pointer-events', 'none');
 
