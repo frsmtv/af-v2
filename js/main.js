@@ -44,11 +44,6 @@ $(document).ready(function () {
     // UI ANIMATION
     $('body').addClass('animated fadeIn');
 
-    // SUMMER POP-UP CLOSE
-    $('#summer_popup i').click(function(){
-      $('#summer_popup').fadeOut();
-    })
-
     // ACTIVATE POINTER EVENTS ON CLICK ON MAP
       $('#map').css('pointer-events', 'none');
 
