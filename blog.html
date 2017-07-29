@@ -16,11 +16,15 @@
     <!-- STYLES -->
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="css/introLoader.css">
     <link rel="stylesheet" href="css/overlay.css">
     <link rel="stylesheet" href="css/bundle-sass.css">
 </head>
 
 <body>
+
+  <!-- PRELOADER -->
+  <div id="element" class="introLoading"></div>
 
     <!-- HEADER -->
     <header>
@@ -71,7 +75,7 @@
       <!-- BLOG INDEX -->
       <section id="blog-index">
 
-        <h2>Le Blog a<span>+</span>f
+        <h2 id="h2-blog">Le Blog a<span>+</span>f
         <img src="img/underline.png" alt="">
         </h2>
 
@@ -121,12 +125,29 @@
 <!-- SCRIPTS -->
 <script src="js/jquery.min.js"></script>
 <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="js/jquery.introLoader.pack.min.js"></script>
 <script src="js/scrolla.jquery.min.js"></script>
 <script src="js/overlay.js"></script>
 <script src="js/main.js"></script>
 
 <!-- JS PLUGINS -->
 <script>
+    // PRELOADER
+    $("#element").introLoader({
+        animation: {
+            name: 'gifLoader',
+            options: {
+                ease: "easeInOutCirc",
+                style: 'light',
+                delayBefore: 2000,
+                delayAfter: 1000,
+                exitTime: 1000,
+                customGif: '../img/preload3.gif',
+                preventScroll: true
+            }
+        }
+    });
+
     // SCROLLA
     $('.animate').scrolla();
 </script>

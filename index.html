@@ -17,10 +17,14 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/jquery.fullpage.min.css">
     <link rel="stylesheet" href="css/overlay.css">
+    <link rel="stylesheet" href="css/introLoader.css">
     <link rel="stylesheet" href="css/bundle-sass.css">
 </head>
 
 <body>
+
+  <!-- PRELOADER -->
+  <div id="element" class="introLoading"></div>
 
     <!-- HEADER -->
     <header>
@@ -203,6 +207,7 @@
 <!-- SCRIPTS -->
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.fullpage.min.js"></script>
+<script src="js/jquery.introLoader.pack.min.js"></script>
 <script src="js/parallax-background.min.js"></script>
 <script src="js/jqfloat.min.js"></script>
 <script src="js/overlay.js"></script>
@@ -210,6 +215,23 @@
 
 <!-- JS PLUGINS -->
 <script>
+    // PRELOADER
+    $("#element").introLoader({
+        animation: {
+            name: 'gifLoader',
+            options: {
+                ease: "easeInOutCirc",
+                style: 'light',
+                delayBefore: 2000,
+                delayAfter: 1000,
+                exitTime: 1000,
+                customGif: '../img/preload3.gif',
+                preventScroll: true
+            }
+        }
+    });
+
+    // FULLPAGE
     $('#fullpage').fullpage({
    anchors:['_intro', '_info', '_portfolio', '_contact'],
     navigation: false,
