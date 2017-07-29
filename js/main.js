@@ -1,28 +1,5 @@
 $(document).ready(function () {
 
-    // FULLPAGE
-    $('#fullpage').fullpage({
-		anchors:['_intro', '_info', '_portfolio', '_contact'],
-    navigation: false,
-    controlArrows: false,
-    slidesNavigation: false,
-    slidesNavPosition: 'bottom',
-    autoScrolling: false,
-    fitToSection: false,
-    fitToSectionDelay: 100,
-	});
-    // SCROLLA
-    // $('.animate').scrolla();
-    // PARALLAX
-    $('.parallax').parallaxBackground();
-
-    // FLOAT
-    $('span.underline').jqFloat({
-		width: 0,
-		height: 0,
-		speed: 1000
-	});
-
   // ANIMATIONS ON SCROLL START
       var scroll_start = 0;
       var startchange = $('body');
