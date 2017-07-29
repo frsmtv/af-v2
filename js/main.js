@@ -7,7 +7,7 @@ $(document).ready(function () {
       $(document).scroll(function() {
           scroll_start = $(this).scrollTop();
           if(scroll_start > offset.top) {
-            $('h1').css('margin-top', '2px');
+            $('h1').css('margin-top', '4px');
             $('.toggle-button').css('top', '10px');
             $('#contact-link').css('top', '20px');
             $('#h2-blog').css('top', '50px');
