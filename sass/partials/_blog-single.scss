@@ -1,7 +1,9 @@
 @import "mixins";
 
-section.blog-page {
+section.blog-page {    
   .parallax {
+    max-width: 1080px;
+    margin: auto;
     width: 100%;
     height: 50vh;
     margin-bottom: 80px;
@@ -34,8 +36,8 @@ section.blog-page {
     }
   }
   article {
-    // width: 90%;
-    margin: auto;
+    max-width: 1080px;
+    margin: auto;    
     text-align: justify;
     margin-top: 100px;
     padding: 0 60px;
@@ -70,6 +72,8 @@ h3 {
   font-size: 1.2rem!important;
   line-height: 1.2!important;
   padding: 0 110px;
+  max-width: 1080px;
+  margin: auto;       
   @media only screen and (max-device-width: 740px){
     width: 80%;
     padding: 0;
