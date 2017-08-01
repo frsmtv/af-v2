@@ -191,11 +191,7 @@
                   <div id="map">
                   </div>
 
-              </div>
-
-              <footer>
-                  © 2017 <a href="index.html">a+f</a> | <a href="#">mentions légales</a>
-              </footer>
+              </div>              
 
           </section>
 
@@ -204,6 +200,35 @@
 
     </main>
 
+    <footer>
+
+      <section class="footer-col">
+        
+        © 2017 <a href="index.html">a+f studio web | Lyon</a><br>
+        <a href="#">mentions légales</a>
+
+      </section>
+
+      <section class="footer-col">
+        
+        <a href="#_intro">home</a><br>
+        <a href="#_info">qui nous sommes</a><br>
+        <a href="#_portfolio">portfolio</a><br>
+        <a href="#_contact">travaillons ensemble</a><br>
+        <br>
+        <a href="blog.html">blog</a>
+
+      </section>
+
+      <section class="footer-col">
+
+        <a href="https://www.facebook.com/afstudioweb/" target="_blank">facebook</a><br>
+        <a href="http://eepurl.com/cXlLOv" target="_blank">mailing list</a>
+
+      </section>
+
+    </footer>
+
 <!-- SCRIPTS -->
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.fullpage.min.js"></script>
@@ -211,6 +236,7 @@
 <script src="js/parallax-background.min.js"></script>
 <script src="js/jqfloat.min.js"></script>
 <script src="js/overlay.js"></script>
+<script src="js/footer-reveal.min.js"></script>
 <script src="js/main.js"></script>
 
 <!-- JS PLUGINS -->
@@ -252,6 +278,9 @@
    height: 0,
    speed: 1000
   });
+
+    // FOOTER
+    $('footer').footerReveal();
 </script>
 
 <!-- GOOGLE MAPS -->
