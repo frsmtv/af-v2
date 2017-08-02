@@ -46,11 +46,16 @@ section.blog-page {
       padding: 0;
       margin: auto;
     }
-    p, ul {
+    p, ul, ol {
       line-height: 1.6;
       letter-spacing: .6px;
       font-size: 1.1rem;
       font-family: serif;
+    }
+    ol {
+      li {
+        margin-bottom: 40px;
+      }
     }
     p.blog-small-p {
       font-size: .9rem;
@@ -72,6 +77,7 @@ h3 {
   font-size: 1.2rem!important;
   line-height: 1.2!important;
   padding: 0 110px;
+  padding-bottom: 40px;
   max-width: 1080px;
   margin: auto;       
   @media only screen and (max-device-width: 740px){
