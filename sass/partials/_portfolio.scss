@@ -3,6 +3,7 @@
 #portfolio {
   padding: 0 5%;
   margin-top: 60px;
+  position: relative;
   h2 {
     padding: 0 5%;
     margin: 0;
@@ -33,10 +34,12 @@
     }
   }
   .projects-wrapper {
-    display: flex;
-    margin-top: -100px;
+    display: flex;    
+    position: absolute;
+    top: 400px;
+    z-index: 99999999;
     @media only screen and (max-device-width: 768px){
-      margin-top: 0;
+      top: 200px;
     }
     div {
       width: 100%;

@@ -1,6 +1,7 @@
 @import "mixins";
 
 section#blog-index {
+	height: 100vh;
 	h2 {
 		font-family: $secondFont;
 		text-align: center;
@@ -44,14 +45,15 @@ section#blog-index {
 			text-align: center;
 			display: flex;
 			justify-content: space-between;
+			flex-wrap: wrap;
 			@media (max-width: 768px) {
 				flex-direction: column;	
  			}
 			li {
-				padding: 0 10px 0 10px;
+				width: 50%;
+				margin-bottom: 80px;
 				@media (max-width: 768px) {
 					width: 100%;
-					margin-bottom: 80px;
      			}
 				img {
 				width: 300px;
@@ -70,6 +72,7 @@ section#blog-index {
 				h3 {
 					padding: 0;
 					width: 300px;
+					margin: auto;
 					margin-top: 20px;
 					@media (max-width: 768px) {
 						margin: auto;
