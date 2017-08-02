@@ -13,6 +13,21 @@ footer {
   margin: auto;
   text-transform: uppercase;
   letter-spacing: 2px;
+  section.footer-mobile {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    @media (max-width: 768px) {
+    display: block;
+    }
+  }
+  section.footer-col {
+    @media (max-width: 768px) {
+    display: none;
+    }
+  }
   a {
     -webkit-transition: all 400ms ease-in;
         -moz-transition: all 400ms ease-in;
@@ -24,12 +39,7 @@ footer {
       text-decoration: underline;
     }
   }
-  @media (max-width: 720px) and (orientation:landscape) {
-    display: block;
-    height: 100vh;
-   }
-   @media (max-width: 720px) {
-     font-size: .6rem;
-     display: none;
-    }
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
