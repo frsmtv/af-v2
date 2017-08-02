@@ -1,7 +1,7 @@
 @import "mixins";
 
 section#blog-index {
-	height: 100vh;
+	min-height: 100vh;
 	h2 {
 		font-family: $secondFont;
 		text-align: center;
