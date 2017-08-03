@@ -1,7 +1,7 @@
 @import "mixins";
 
 section#blog-index {
-	min-height: 100vh;
+	// min-height: 100vh;
 	h2 {
 		font-family: $secondFont;
 		text-align: center;
@@ -81,5 +81,20 @@ section#blog-index {
 				}				
 			}
 			}
-		}
+		}		
 	}
+	div.blog-social {
+			width: 80%;
+			margin: auto;
+			h3 {
+				padding: 0;
+				width: 100%;
+				line-height: 1.2!important;
+			}
+			.fb-btn {
+				margin-top: 40px;
+				@media (max-width: 768px) {
+ 				}
+			}
+		}
+	

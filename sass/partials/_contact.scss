@@ -22,7 +22,7 @@
     margin: 0;
     margin-bottom: 40px;
     // margin-top: -200px;
-    line-height: 1;
+    line-height: 1.2;
     color: $mainColor;
     @media only screen and (max-device-width: 568px){
       font-size: 1.5rem;
@@ -45,6 +45,7 @@
   h5 {
     font-size: 1.8rem;
     margin-top: 80px;
+    line-height: 1.4;
     @media only screen and (max-device-width: 568px){
       font-size: 1rem;
       line-height: 1.2;

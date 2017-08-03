@@ -117,3 +117,17 @@ a.blog-index-link {
       color: $secondColor
     }
 }
+div.blog-single-social {
+      width: 80%;
+      margin: auto;
+      h3 {
+        padding: 0;
+        width: 100%;
+        line-height: 1.4!important;
+      }
+      .fb-btn {
+        margin-top: 40px;
+        @media (max-width: 768px) {
+        }
+      }
+    }
