@@ -204,7 +204,8 @@
                   ainsi que des ressources supplémentaires, et retrouvez-nous sur <a href="https://www.facebook.com/afstudioweb/" target="_blank">facebook</a>.</h5>
                   
                   <!-- Facebook Subscribe button -->
-                  <iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fafstudioweb&width=82&height=65&layout=button&size=small&show_faces=false&appId" width="82" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                  <div id="fb-root"></div>
+                  <div class="fb-follow" data-href="https://www.facebook.com/afstudioweb/" data-layout="button" data-size="small" data-show-faces="true"></div>
 
               <div class="map-wrapper">
 
@@ -303,6 +304,17 @@
 
     // FOOTER
     $('footer').footerReveal();
+</script>
+
+<!-- FACEBOOK BUTTON -->
+<script>
+  (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.10";
+      fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
 </script>
 
 <!-- GOOGLE MAPS -->
